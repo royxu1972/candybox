@@ -1,0 +1,108 @@
+A A. Alsewari|Dar Alsalam International University for Science & Technology|@
+Ajay Kattepur|INRIA, France|@inria.fr
+Akhil R. Shah||
+Andrea Arcuri|Senior Software Engineer|@simula.no
+Andrea Calvagna|University of Catania|@cs.unict.it
+Andreas H. Ronneseth||
+Angelo Gargantini||
+Anthony Barrett||
+Atlee M. Cunningham Jr||
+Baiqiang Chen||
+Bestoun S. Ahmed|Ph.D. Software Engineering, University Sains Malaysia (USM), Lecturer at Salahaddin  |@eng-usalah.org
+Brady J. Garvin||
+Carlos Hoppen|Instituto de Matemtica, Universidade Federal do Rio Grande do Sul|@ufrgs.br
+Cemal Yilmaz||
+Chang Hwan Peter Kim||
+Changhai Nie||
+Charles Song||
+Cu D. Nguyen||
+D. Richard Kuhn||
+Dale Blue||
+Eduardo Rodriguez-Tello|Professor of Computer Science, CINVESTAV - Tamaulipas|@tamps.cinvestav.mx
+Eitan Farchi|IBM Research Lab in Haifa|@il.ibm.com
+Elisa Puoskari||
+Elizabeth Maltais||
+Elke Salecker||
+Emine Dumlu||
+Evelyn Nicole Haslinger||
+Feifei Ma||
+G. Fraser||
+G. Varvara||
+Gilles Perrouin|University of Namur|@fundp.ac.be
+Hao Chen||
+Hema Srikanth||
+Itai Segall|Research Staff Member, IBM Research|@il.ibm.com
+Jacek Czerwonka|Microsoft Corp.|@microsoft.com
+James D. McCaffrey||
+Javier Ferrer||
+Jeremy S. Bradbury|Associate Professor, University of Ontario Institute of Technology|@uoit.ca
+Jian Zhang||
+Jianhua Gao||
+Jianjun Yuan||
+Jie Li||
+Jose Torres-Jimenez|CINVESTAV-TAMAULIPAS|@cinvestav.mx
+Josue Bracho-Rios||
+Justyna Petke||
+K F. Rabbi|PhD Scholar, Charles Sturt University|@csu.edu.au
+Kamal Z. Zamli|Universiti Malaysia Pahang|@ump.edu.my
+Kera Z. Watkins||
+Kiran Shakya||
+Laleh Sh. Ghandehari||
+Lijun Ji||
+Linbin Yu|University of Texas at Arlington|@mavs.uta.edu
+Lixin Wang||
+Ljubomir Lazic|State University of Novi Pazar|@np.ac.rs
+Longshu Li||
+M. Brcic|Docent, Tehniki fakultet, Sveuilite u Rijeci|@riteh.hr
+Manish Mehta|Senior Specialist Accenture Technology Labs|@accenture.com
+Martin Fagereng Johansen|Verified email at fek.uu.se|@
+Mehra N. Bourazjany||
+Michaela Steffens||
+Mohammed F.J. Klaib||
+Mohammed I. Younis||
+Mutsunori Banbara|Kobe University|@kobe-u.ac.jp
+Myra B. Cohen|University of Nebraska-Lincoln|@cse.unl.edu
+Oded Margalit||
+P. Flores||
+Pedro Quiz-Ramos||
+Peter Gorm Larsen||
+Peter M. Kruse|McMaster University|@mcmaster.ca
+Peyman Nayeri||
+Preeti Satish||
+Pu Yunming||
+R R. Othman||
+Renee C. Bryce|University of North Texas|@unt.edu
+Rick Kuhn|Computer scientist, National Institute of Standards and Technology (NIST)|@nist.gov
+Robert A. Walker II||
+Rubing Huang||
+Rudolf Ramler||
+S. Khatun||
+Sachin Patel|Vanderbilt University|@vanderbilt.edu
+Sandro Fouche||
+Saswat Anand||
+Sebastian Oster||
+Sergiy A. Vilkomir|Department of Computer Science, East Carolina University, USA|@ecu.edu
+Sergiy Vilkomir|Department of Computer Science, East Carolina University, USA|@ecu.edu
+Si Huang||
+Sreedevi Sampath||
+Taha Triki||
+Tanja E.J. Vos||
+Tian Pei||
+Wang Jianfeng||
+Wenhua Wang|Genentech, Inc|@gene.com
+Wolfgang Grieskamp|Google|@google.com
+Xiang Chen||
+Xiao Qu|Software Engineering Researcher, ABB Coporate Research|@us.abb.com
+Xiaoying Pan||
+Xintao Niu||
+Xun Yuan|Institute of Bioengineering and Nanotechnology (IBN), Singapore|@ibn.a-star.edu.sg
+Y. Labiche||
+Yalan Liang||
+Yang Li||
+Yasuharu Nishi||
+Yingxia Cui||
+Yong Zhao||
+Yves Ledru||
+Zainal HC Soh||
+Zhiqiang Zhang|Department of Medical Imaging, Jinling Hospital, Nanjing University School of Medicine|@nju.org.cn
+Ziyuan Wang||

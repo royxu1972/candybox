@@ -1,0 +1,314 @@
+[1] Gunwant Dhadyalla, Neelu Kumari, Timothy Snell, Combinatorial Testing for an Automotive Hybrid Electric Vehicle Control System: A Case Study, The 3rd International Workshop on Combinatorial Testing (IWCT), 2014: 51-57
+[2] Bernhard Garn, Dimitris E. Simos, Eris: A Tool for Combinatorial Testing of the Linux System Call Interface, The 3rd International Workshop on Combinatorial Testing (IWCT), 2014: 58-67
+[3] Laleh Sh. Ghandehari, Jacek Czerwonka, Yu Lei, Soheil Shafiee, Raghu Kacker, Richard Kuhn, An Empirical Comparison of Combinatorial and Random Testing, The 3rd International Workshop on Combinatorial Testing (IWCT), 2014: 68-77
+[4] Sergiy Vilkomir, Brandi Amstutz, Using Combinatorial Approaches for Testing Mobile Applications, The 3rd International Workshop on Combinatorial Testing (IWCT), 2014: 78-83
+[5] Andrea Calvagna, Andrea Fornaia, Emiliano Tramontana, Combinatorial Interaction Testing of a Java Card Static Verifier, The 3rd International Workshop on Combinatorial Testing (IWCT), 2014: 84-87
+[6] Preeti Satish, Arinjita Paul, Krishnan Rangarajan, Extracting the Combinatorial Test Parameters and Values from UML Sequence Diagrams, The 3rd International Workshop on Combinatorial Testing (IWCT)
+[7] Paolo Arcaini, Angelo Gargantini, Paolo Vavassori, Validation of Models and Tests for Constrained Combinatorial Interaction Testing, The 3rd International Workshop on Combinatorial Testing (IWCT)
+[8] George B. Sherwood, Functional Dependence and Equivalence Class Factors in Combinatorial Test Designs, The 3rd International Workshop on Combinatorial Testing (IWCT)
+[9] Eitan Farchi, Itai Segall, Rachel Tzoref-Brill, Aviad Zlotnick, Combinatorial Testing with Order Requirements, The 3rd International Workshop on Combinatorial Testing (IWCT)
+[10] Quentin Mayo, Ryan Michaels, Renée Bryce, Test Suite Reduction by Combinatorial-Based Coverage of Event Sequences, The 3rd International Workshop on Combinatorial Testing (IWCT)
+[11] Huayao Wu, Changhai Nie, Fei-Ching Kuo, Test Suite Prioritization by Switching Cost, The 3rd International Workshop on Combinatorial Testing (IWCT)
+[12] Xiaohua Li, Zhao Dong, Huayao Wu, Changhai Nie, Kai-Yuan Cai, Refining a Randomized Post-optimization Method for Covering Arrays, The 3rd International Workshop on Combinatorial Testing (IWCT)
+[13] Jon Hagar, Rick Kuhn, Raghu Kacker, Tom Wissink, Introducing Combinatorial Testing in a Large Organization: Pilot Project Experience Report (Poster), The 3rd International Workshop on Combinatorial Testing (IWCT)
+[14] Rick Kuhn, Raghu Kacker, Yu Lei, Estimating Fault Detection Effectiveness (Poster), The 3rd International Workshop on Combinatorial Testing (IWCT)
+[15] Cemal Yilmaz, Sandro Fouche, Myra B. Cohen, Adam Porter, Gulsen Demiroz, Ugur Koc, Moving Forward with Combinatorial Interaction Testing, Computer
+[16] Cemal Yilmaz, Emine Dumlu, Myra B. Cohen, Adam Porter, Reducing Masking Effects in CombinatorialInteraction Testing: A Feedback DrivenAdaptive Approach, IEEE Transactions on Software Engineering (TSE)
+[17] Andrea Calvagna, Angelo Gargantini, Paolo Vavassori, Combinatorial Testing for Feature Models Using CitLab, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[18] Changhai Nie, Hareton Leung, Kai-Yuan Cai, Adaptive Combinatorial Testing, International Conference on Quality Software
+[19] Changhai Nie, Jing Jiang, Huayao Wu, Hareton Leung, Charles J. Colbourn, Empirically Identifying the Best Greedy Algorithm for Covering Array Generation, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[20] D. Richard Kuhn, Itzel D. Mendoza, Raghu N. Kacker, Yu Lei, Combinatorial Coverage Measurement Concepts and Applications, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[21] Dale Blue, Itai Segall, Rachel Tzoref-Brill, Aviad Zlotnick, Interaction-Based Test-Suite Minimization, International Conference on Software Engineering (ICSE)
+[22] Eitan Farchi, Itai Segall, Rachel Tzoref-Brill, Using Projections to Debug Large Combinatorial Models, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[23] Elisa Puoskari, Tanja E.J. Vos, Nelly Condori-Fernandez, Peter M. Kruse, Evaluating applicability of combinatorial testing in an industrial environment: a case study, International Workshop on Joining AcadeMiA and Industry Contributions to testing Automation
+[24] Evelyn Nicole Haslinger, Roberto E. Lopez-Herrejon, Alexander Egyed, Using feature model knowledge to speed up the generation of covering arrays, International Workshop on Variability Modelling of Software-intensive Systems
+[25] Jacek Czerwonka, On Use of Coverage Metrics in Assessing Effectiveness of Combinatorial Test Designs, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[26] Justyna Petke, Shin Yoo, Myra B. Cohen, Mark Harman, Efficiency and early fault detection with lower and higher strength combinatorial interaction testing, Joint Meeting on Foundations of Software Engineering (FSE)
+[27] Laleh Sh. Ghandehari, Yu Lei, David Kung, Raghu Kacker, Richard Kuhn, Fault localization based on failure-inducing combinations, International Symposium on Software Reliability Engineering (ISSRE)
+[28] Laleh Sh. Ghandehari, Mehra N. Bourazjany, Yu Lei, Raghu N. Kacker, D. Richard Kuhn, Applying Combinatorial Testing to the Siemens Suite, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[29] Linbin Yu, Yu Lei, M. Nourozborazjany, Raghu N. Kacker, D. Richard Kuhn, An Efficient Algorithm for Constraint Handling in Combinatorial Test Generation, International Conference on Software Testing, Verification and Validation (ICST)
+[30] Manish Mehta, Roji Philip, Applications of Combinatorial Testing Methods for Breakthrough Results in Software Testing, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[31] Mehra N. Bourazjany, Laleh Sh Ghandehari, Yu Lei, Raghu N. Kacker, Rick Kuhn, An Input Space Modeling Methodology for Combinatorial Testing, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[32] Oded Margalit, Better Bounds for Event Sequencing Testing, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[33] Preeti Satish, K. Sheeba, Krishnan Rangarajan, Deriving Combinatorial Test Design Model from UML Activity Diagram, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[34] Sachin Patel, Priya Gupta, Vipul Shah, Combinatorial Interaction Testing with Multi-perspective Feature Models, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[35] Saswat Anand, Edmund K. Burke, Tsong Yueh Chen, John Clark, Myra B. Cohen, Wolfgang Grieskamp, Mark Harman, Mary Jean Harrold, Phil McMinn, An orchestrated survey of methodologies for automated software test case generation, Journal of Systems and Software (JSS)
+[36] Sergiy Vilkomir, Oleksii Starov, Ranjan Bhambroo, Evaluation of t-wise Approach for Testing Logical Expressions in Software, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[37] Xiao Qu, Myra B. Cohen, A Study in Prioritization for Higher Strength Combinatorial Testing, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[38] Xintao Niu, Changhai Nie, Yu Lei, Alvin T S. Chan, Identifying Failure-Inducing Combinations Using Tuple Relationship, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[39] Y. Labiche, F R. Sadeghi, Experimenting with Category Partition's 1-Way and 2-Way Test Selection Criteria, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[40] Yasuharu Nishi, Tetsuro Katayama, Satomi Yoshizawa, Combinatorial Test Architecture Design Using Viewpoint Diagram, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[41] Yong Zhao, Zhiqiang Zhang, Jun Yan, Jian Zhang, Cascade: A Test Generation Tool for Combinatorial Testing, The 2nd International Workshop on Combinatorial Testing (IWCT)
+[42] Loreto Gonzalez-Hernandez, Jose Torres-Jimenez, Nelson Rangel-Valdez, MiTS in Depth: An Analysis of Distinct Tabu Search Configurations for Constructing Mixed Covering Arrays, Artificial Intelligence, Evolutionary Computing and Metaheuristics
+[43] M. Brcic, D. Kalpic, Combinatorial testing in software projects, Proceedings of the International Convention
+[44] Martin Fagereng Johansen, {\O}ystein Haugen, Franck Fleurey, An algorithm for generating t-wise covering arrays from large feature models, International Software Product Line Conference
+[45] Martin Fagereng Johansen, Oystein Haugen, Franck Fleurey, Anne Grete Eldegard, Torbjorn Syversen, Generating better partial covering arrays by modeling weights on sub-product lines, International conference on Model Driven Engineering Languages and Systems
+[46] Mehra N. Bourazjany, Linbin Yu, Yu Lei, Raghu N. Kacker, Rick Kuhn, Combinatorial Testing of ACTS: A Case Study, International Conference on Software Testing, Verification and Validation (ICST)
+[47] Michaela Steffens, Sebastian Oster, Malte Lochau, Thomas Fogdal, Industrial evaluation of pairwise SPL testing with MoSo-PoLiTe, International Workshop on Variability Modeling of Software-Intensive Systems
+[48] Peter M. Kruse, I. Schieferdecker, Comparison of approaches to prioritized test generation for combinatorial interaction testing, Federated Conference on Computer Science and Information Systems
+[49] Peter M. Kruse, Jurgen Bauer, Joachim Wegener, Numerical Constraints for Combinatorial Interaction Testing, International Conference on Software Testing, Verification and Validation (ICST)
+[50] Rubing Huang, Xiaodong Xie, Tsong Yueh Chen, Yansheng Lu, Adaptive Random Test Case Generation for Combinatorial Testing, International Conference on Computer Software and Applications (COMPSAC)
+[51] Rudolf Ramler, Theodorich Kopetzky, Wolfgang Platz, Combinatorial Test Design in the TOSCA Testsuite: Lessons Learned and Practical Implications, International Conference on Software Testing, Verification and Validation (ICST)
+[52] Taha Triki, Yves Ledru, Lydie Bousquet, Frederic Dadeau, Julien Botella, Model-Based filtering of combinatorial test suites, International conference on Fundamental Approaches to Software Engineering
+[53] Xiao Qu, M. Acharya, Brian Robinson, Configuration selection using code change impact analysis for regression testing, International Conference on Software Maintenance (ICSM)
+[54] Yves Ledru, G. Vega, Taha Triki, Lydie Bousquet, Test suite selection based on traceability annotations, International Conference on Automated Software Engineering (ASE)
+[55] Zhiqiang Zhang, Xiaojian Liu, Jian Zhang, Combinatorial Testing on ID3v2 Tags of MP3 Files, International Conference on Software Testing, Verification and Validation (ICST)
+[56] Loreto Gonzalez-Hernandez, Nelson Rangel-Valdez, Jose Torres-Jimenez, Construction of Mixed Covering Arrays of Strengths 2 through 6 using a TABU Search Approach, Discrete Mathematics, Algorithms and Applications
+[57] Akhil R. Shah, Siddhartha R. Dalal, Combinatorial enlargement of ground-truth datasets and efficient evaluation of segmentation algorithms, International Workshop on Visual Interfaces for Ground Truth Collection in Computer Vision Applications
+[58] Andrea Arcuri, Lionel Briand, Formal Analysis of the Probability of Interaction Fault Detection Using Random Testing, IEEE Transactions on Software Engineering (TSE)
+[59] Andrea Calvagna, Giuseppe Pappalardo, Emiliano Tramontana, A Novel Approach to Effective Parallel Computing of t-Wise Covering Arrays, International Workshop on Enabling Technologies: Infrastructure for Collaborative Enterprises
+[60] Angelo Gargantini, Paolo Vavassori, CITLAB: A Laboratory for Combinatorial Interaction Testing, International Conference on Software Testing, Verification and Validation (ICST)
+[61] Atlee M. Cunningham Jr, Jon Hagar, Ryan J. Holman, A System Analysis Study Comparing Reverse Engineered Combinatorial Testing to Expert Judgment, International Conference on Software Testing, Verification and Validation (ICST)
+[62] Bestoun S. Ahmed, Kamal Z. Zamli, Chee Peng Lim, Applied Soft Computing, Applied Soft Computing
+[63] Cemal Yilmaz, Test Case-Aware Combinatorial Interaction Testing, IEEE Transactions on Software Engineering (TSE)
+[64] Changhai Nie, Huayao Wu, Yalan Liang, Hareton Leung, Fei-Ching Kuo, Zheng Li, Search Based Combinatorial Testing, Asia-Pacific Software Engineering Conference (APSEC)
+[65] Charles Song, Adam Porter, Jeffrey S. Foster, iTree: efficiently discovering high-coverage configurations using interaction trees, International Conference on Software Engineering (ICSE)
+[66] Cu D. Nguyen, Alessandro Marchetto, Paolo Tonella, Combining model-based and combinatorial testing for effective test case generation, International Symposium on Software Testing and Analysis (ISSTA)
+[67] D. Richard Kuhn, James M. Higdon, James F. Lawrence, Raghu N. Kacker, Yu Lei, Efficient Methods for Interoperability Testing Using Event Sequences, Journal of Defense Software Engineering
+[68] D. Richard Kuhn, James M. Higdon, James F. Lawrence, Raghu N. Kacker, Yu Lei, Combinatorial Methods for Event Sequence Testing, International Conference on Software Testing, Verification and Validation (ICST)
+[69] Elke Salecker, Sabine Glesner, Combinatorial Interaction Testing for Test Selection in Grammar-Based Testing, International Conference on Software Testing, Verification and Validation (ICST)
+[70] Hao Chen, Shu-Yan Wang, Xiaoying Pan, An optimal combination test suite construction method, International Conference on Natural Computation
+[71] Itai Segall, Rachel Tzoref-Brill, Interactive refinement of combinatorial test plans, International Conference on Software Engineering (ICSE)
+[72] Itai Segall, Rachel Tzoref-Brill, Aviad Zlotnick, Common Patterns in Combinatorial Models, International Conference on Software Testing, Verification and Validation (ICST)
+[73] Itai Segall, Rachel Tzoref-Brill, Aviad Zlotnick, Simplified Modeling of Combinatorial Test Spaces, International Conference on Software Testing, Verification and Validation (ICST)
+[74] Javier Ferrer, Peter M. Kruse, Francisco Chicano, Enrique Alba, Evolutionary algorithm for prioritized pairwise test data generation, International conference on Genetic and evolutionary computation conference
+[75] Jeremy S. Bradbury, Itai Segall, Eitan Farchi, Kevin Jalbert, David Kelk, Using combinatorial benchmark construction to improve the assessment of concurrency bug detection tools, Interational Workshop on Parallel and Distributed Systems: Testing, Analysis, and Debugging
+[76] Jian Zhang, Feifei Ma, Zhiqiang Zhang, Faulty interaction identification via constraint solving and optimization, International conference on Theory and Applications of Satisfiability Testing
+[77] Jie Li, Changhai Nie, Yu Lei, Improved Delta Debugging Based on Combinatorial Testing, International Conference on Quality Software (QSIC)
+[78] Jose Torres-Jimenez, Eduardo Rodriguez-Tello, New bounds for binary covering arrays using simulated annealing, Information Sciences
+[79] Kiran Shakya, Tao Xie, Nuo Li, Yu Lei, Raghu N. Kacker, D. Richard Kuhn, Isolating Failure-Inducing Combinations in Combinatorial Testing Using Test Augmentation and Classification, International Conference on Software Testing, Verification and Validation (ICST)
+[80] Laleh Sh. Ghandehari, Yu Lei, Tao Xie, D. Richard Kuhn, Raghu N. Kacker, Identifying Failure-Inducing Combinations in a Combinatorial Test Set, International Conference on Software Testing, Verification and Validation (ICST)
+[81] Linbin Yu, Yu Lei, Raghu N. Kacker, D. Richard Kuhn, James Lawrence, Efficient Algorithms for T-way Test Sequence Generation, International Conference on Engineering of Complex Computer Systems
+[82] Longshu Li, Yingxia Cui, Yun Yang, Combinatorial test cases with constraints in software systems, International Conference on Computer Supported Cooperative Work in Design
+[83] Jim Lawrence, Raghu N. Kacker, Yu Lei, D. Richard Kuhn, Michael Forbes, A Survey of Binary Covering Arrays, The Electronic Journal of Combinatorics
+[84] A A. Alsewari, Kamal Z. Zamli, Interaction test data generation using Harmony Search Algorithm, Interational Symposium on Industrial Electronics and Applications
+[85] Ajay Kattepur, Sagar Sen, Benoit Baudry, Albert Benveniste, Claude Jard, Pairwise testing of dynamic composite services, International Symposium on Software Engineering for Adaptive and Self-Managing Systems
+[86] Baiqiang Chen, Jian Zhang, Tuple density: a new metric for combinatorial test suites (NIER track), International Conference on Software Engineering (ICSE)
+[87] Bestoun S. Ahmed, Kamal Z. Zamli, The Journal of Systems and Software, The Journal of Systems {\&} Software (JSS)
+[88] Chang Hwan Peter Kim, Don S. Batory, Sarfraz Khurshid, Reducing combinatorics in testing product lines, International conference on Aspect-oriented software development
+[89] Changhai Nie, Hareton Leung, The Minimal Failure-Causing Schema of Combinatorial Testing, ACM Transactions on Software Engineering and Methodology (TOSEM)
+[90] Changhai Nie, Hareton Leung, A survey of combinatorial testing, ACM Computing Surveys
+[91] Emine Dumlu, Cemal Yilmaz, Myra B. Cohen, Adam Porter, Feedback driven adaptive combinatorial testing, International Symposium on Software Testing and Analysis (ISSTA)
+[92] G. Varvara, V. Sandu, Implementation and covering analysis for the T-way combinatorial testing strategy, International Conference on System Theory, Control, and Computing
+[93] Itai Segall, Rachel Tzoref-Brill, Eitan Farchi, Using binary decision diagrams for combinatorial test design, International Symposium on Software Testing and Analysis (ISSTA)
+[94] K F. Rabbi, S. Khatun, C Y. Yaakub, MFJ Klaib, EasyA: Easy and Effective Way to Generate Pairwise Test Data, International Conference on Computational Intelligence, Communication Systems and Networks
+[95] Martin Fagereng Johansen, Oystein Haugen, Franck Fleurey, Properties of realistic feature models make combinatorial testing of product lines feasible, International conference on Model driven engineering languages and systems
+[96] Martin Fagereng Johansen, Oystein Haugen, Franck Fleurey, Bow tie testing: a testing pattern for product lines, European Conference on Pattern Languages of Programs
+[97] Mohammed F.J. Klaib, S. Muthuraman, A. Noraziah, A Parallel Tree Based Strategy for T-Way Combinatorial Interaction Testing, International Conference on Software Engineering and Computer Systems
+[98] P. Flores, Yoonsik Cheon, PWiseGen: Generating test cases for pairwise testing using genetic algorithms, International Conference on Computer Science and Automation Engineering
+[99] R R. Othman, Kamal Z. Zamli, Input-input relationship constraints in T-way testing, Interational Symposium on Industrial Electronics and Applications
+[100] R R. Othman, Kamal Z. Zamli, T-Way Strategies and Its Applications for Combinatorial Testing, International Journal on New Computer Architectures and Their Applications
+[101] Renee C. Bryce, Charles J. Colbourn, D. Richard Kuhn, Finding Interaction Faults Adaptively Using Distance-Based Strategies, International Conference and Workshops on Engineering of Computer-Based Systems
+[102] Renee C. Bryce, Sreedevi Sampath, Atif M. Memon, Developing a Single Model and Test Prioritization Strategies for Event-Driven Software, IEEE Transactions on Software Engineering (TSE)
+[103] Renee C. Bryce, Sreedevi Sampath, Jan B. Pedersen, Schuyler Manchester, Test suite prioritization by cost-based combinatorial interaction coverage, International Journal of System Assurance Engineering and Management
+[104] Rick Kuhn, Raghu N. Kacker, Practical combinatorial (t-way) methods for detecting complex faults in regression testing, International Conference on Software Maintenance (ICSM)
+[105] S. Khatun, K F. Rabbi, C Y. Yaakub, MFJ Klaib, A Random search based effective algorithm for pairwise test data generation, International Conference on Electrical, Control and Computer Engineering
+[106] Sebastian Oster, Ivan Zorcic, Florian Markert, Malte Lochau, MoSo-PoLiTe: tool support for pairwise and model-based software product line testing, Interational Workshop on Variability Modeling of Software-Intensive Systems
+[107] Sebastian Oster, Marius Zink, Malte Lochau, Mark Grechanik, Pairwise feature-interaction testing for SPLs: potentials and limitations, International Software Product Line Conference
+[108] Tanja E.J. Vos, Paolo Tonella, Joachim Wegener, Mark Harman, Wishnu Prasetya, Elisa Puoskari, Yarden Nir Buchbinder, Future Internet Testing with FITTEST, European Conference on Software Maintenance and Reengineering
+[109] Wang Jianfeng, Jiang Shouda, An Improved Algorithm for Test Data Generation Based on Particle Swarm Optimization, International Conference on Instrumentation, Measurement, Computer, Communication and Control
+[110] Wenhua Wang, Yu Lei, Donggang Liu, David Kung, C. Csallner, Dazhi Zhang, Raghu N. Kacker, D. Richard Kuhn, A combinatorial approach to detecting buffer overflow vulnerabilities, International Conference on Dependable Systems {\&} Networks
+[111] Xiao Qu, Mithun Acharya, Brian Robinson, Impact Analysis of Configuration Changes for Test Case Selection, International Symposium on Software Reliability Engineering
+[112] Xiaoying Pan, Hao Chen, Using Organizational Evolutionary Particle Swarm Techniques to Generate Test Cases for Combinatorial Testing, International Conference on Computational Intelligence and Security
+[113] Yalan Liang, Changhai Nie, Jonathan M. Kauffman, Gregory M. Kapfhammer, Hareton Leung, Empirically Identifying the Best Genetic Algorithm for Covering Array Generation, International Symposium on Search Based Software Engineering, fast abstract (ISSBSE)
+[114] Zhiqiang Zhang, Jian Zhang, Characterizing failure-causing parameter interactions by adaptive testing, International Symposium on Software Testing and Analysis (ISSTA)
+[115] Loreto Gonzalez-Hernandez, Nelson Rangel-Valdez, Jose Torres-Jimenez, Construction of mixed covering arrays of variable strength using a tabu search approach, International Conference on Combinatorial Optimization and Applications
+[116] Andrea Calvagna, Angelo Gargantini, A Formal Logic Approach to Constrained Combinatorial Testing, Journal of Automated Reasoning
+[117] Baiqiang Chen, Jun Yan, Jian Zhang, Combinatorial Testing with Shielding Parameters, Asia-Pacific Software Engineering Conference (APSEC)
+[118] Bestoun S. Ahmed, Kamal Z. Zamli, T-Way Test Data Generation Strategy Based on Particle Swarm Optimization, International Conference on Computer Research and Development
+[119] Bestoun S. Ahmed, Kamal Z. Zamli, PSTG: A T-Way Strategy Adopting Particle Swarm Optimization, Asia International Conference on Mathematical/Analytical Modelling and Computer Simulation
+[120] Brady J. Garvin, Myra B. Cohen, Matthew B. Dwyer, Evaluating improvements to a meta-heuristic search for constrained interaction testing, Empirical Software Engineering (ESE)
+[121] Carlos Hoppen, Yoshiharu Kohayakawa, Carlos G. Moreira, Raudini M. Sampaio, Property testing and parameter testing for permutations, Annual ACM-SIAM Symposium on Discrete Algorithms
+[122] D. Richard Kuhn, Raghu N. Kacker, Yu Lei, Practical combinatorial testing, National Institute of Standards & Technology (Tech)
+[123] Feifei Ma, Constraint solving techniques for software testing and analysis, International Conference on Software Engineering (ICSE)
+[124] Gilles Perrouin, Sagar Sen, Jacques Klein, Benoit Baudry, Yves le Traon, Automated and Scalable T-wise Test Case Generation Strategies for Software Product Lines, International Conference on Software Testing, Verification and Validation
+[125] James D. McCaffrey, An Empirical Study of Pairwise Test Set Generation Using a Genetic Algorithm, International Conference on Information Technology: New Generations
+[126] Jianjun Yuan, Zuowen Jiang, Constructing Prioritized Interaction Test Suite with Interaction Relationship, International Workshop on Education Technology and Computer Science
+[127] Jose Torres-Jimenez, Eduardo Rodriguez-Tello, Simulated Annealing for constructing binary covering arrays of variable strength, Congress on Evolutionary Computation (CEC)
+[128] Kera Z. Watkins, Introducing fault-based combinatorial testing to Web services, Proceedings of the SoutheastCon
+[129] Lixin Wang, Renxia Wan, A New Method of Reducing Pair-wise Combinatorial Test Suite, Computer and Information Science
+[130] Longshu Li, Yingxia Cui, Sheng Yao, Application of quotient space theory in input-output relationship based combinatorial testing, International conference on Rough set and knowledge technology
+[131] Mohammad F.J. Klaib, Sangeetha Muthuraman, Noraziah Ahmad, Roslina Sidek, A Parallel Tree Based Strategy for Test Data Generation and Cost Calculation for Pairwise Combinatorial Interaction Testing, International Conference on Networked Digital Technologies
+[132] Mohammed I. Younis, Kamal Z. Zamli, R R. Othman, Effectiveness of the cumulative vs. normal mode of operation for combinatorial testing, Interational Symposium on Industrial Electronics and Applications
+[133] Mutsunori Banbara, Haruki Matsunaka, Naoyuki Tamura, Katsumi Inoue, Generating combinatorial test cases by efficient SAT encodings suitable for CDCL SAT solvers, International conference on Logic for programming, artificial intelligence and reasoning
+[134] Myra B. Cohen, Shmuel Ur, Combinatorial test design in practice, International Conference on Software Engineering (ICSE)
+[135] Peter Gorm Larsen, Kenneth Lausdahl, Nick Battle, Combinatorial Testing for VDM, International Conference on Software Engineering and Formal Methods
+[136] Pu Yunming, The design of test case based on combinatorial and orthogonal experiment, International Conference on Information Science and Engineering
+[137] Si Huang, Myra B. Cohen, Atif M. Memon, Repairing GUI Test Suites Using a Genetic Algorithm, International Conference on Software Testing, Verification and Validation (ICST)
+[138] Tian Pei, Wang Jiancheng, Xi Xiaojing, Li Yingmei, A method of combinatorial test cases generating based on CMA-PGA model, International Conference on Industrial and Information Systems
+[139] Xiang Chen, Qing Gu, Jingxian Qi, Daoxu Chen, Applying Particle Swarm Optimization to Pairwise Testing, International Conference on Computer Software and Applications
+[140] Xun Yuan, Myra B. Cohen, Atif M. Memon, GUI Interaction Testing: Incorporating Event Context, IEEE Transactions on Software Engineering (TSE), 37(4): 559-574, 2010
+[141] Zainal HC Soh, Syahrul AC Abdullah, Kamal Zuhairi Zamli, Mohammed I. Younis, Distributed t-way test suite data generation using exhaustive search method with map and reduce framework, Interational Symposium on Industrial Electronics and Applications, 2010: 340-344
+[142] Ziyuan Wang, Baowen Xu, Lin Chen, Lei Xu, Adaptive Interaction Fault Location Based on Combinatorial Testing, International Conference on Quality Software (QSIC), 2010: 495-502
+[143] Andrea Calvagna, Angelo Gargantini, IPO-s: Incremental Generation of Combinatorial Interaction Test Data Based on Symmetries of Covering Arrays, International Conference on Software Testing, Verification, and Validation Workshops, 2009: 41930
+[144] Andrea Calvagna, Angelo Gargantini, Emiliano Tramontana, Building T-wise Combinatorial Interaction Test Suites by Means of Grid Computing, International Workshops on Enabling Technologies: Infrastructures for Collaborative Enterprises, 2009: 213-218
+[145] Andreas H. Ronneseth, Charles J. Colbourn, Merging covering arrays and compressing multiple sequence alignments, Discrete Applied Mathematics, 157(9): 2177-2190, 2009
+[146] Anthony Barrett, Daniel Dvorak, A Combinatorial Test Suite Generator for Gray-Box Testing, International Conference on Space Mission Challenges for Information Technology, 2009: 387-393
+[147] Brady J. Garvin, Myra B. Cohen, M B. Dwyer, An Improved Meta-heuristic Search for Constrained Interaction Testing, International Symposium on Search Based Software Engineering, 2009: 13-22
+[148] Eduardo Rodriguez-Tello, Jose Torres-Jimenez, Memetic algorithms for constructing binary covering arrays of strength three, International conference on Artificial evolution, 2009: 86-97
+[149] Elizabeth Maltais, Covering arrays avoiding forbidden edges and edge clique covers, University of Ottawa, 2009
+[150] G. Fraser, Angelo Gargantini, Experiments on the test case length in specification based test case generation, Interational Workshop on Automation of Software Test, 2009: 18-26
+[151] Hema Srikanth, Myra B. Cohen, Xiao Qu, Reducing Field Failures in System Configurable Software: Cost-Based Prioritization, International Symposium on Software Reliability Engineering, 2009: 61-70
+[152] James D. McCaffrey, Generation of Pairwise Test Sets Using a Genetic Algorithm, International Conference on Computer Software and Applications, 2009: 626-631
+[153] Jianhua Gao, Yuefeng Hu, A Novel Generation Algorithm of Pair-Wise Testing Cases, Pacific Rim International Symposium on Dependable Computing, 2009: 43-48
+[154] Jianjun Yuan, Changjun Jiang, Construct Pairwise Test Suites Based on the Bak-Sneppen Model of Biological Evolution, World Academy of Science, Engineering and Technology, 59(1): 224-229, 2009
+[155] Josue Bracho-Rios, Jose Torres-Jimenez, Eduardo Rodriguez-Tello, A New Backtracking Algorithm for Constructing Binary Covering Arrays of Variable Strength, Mexican International Conference on Artificial Intelligence, 2009: 394-407
+[156] Kamal Z. Zamli, Mohammed F.J. Klaib, Mohammed I. Younis, Noor S. Jusof, A Deterministic T-Way Strategy for Test Data Minimization, International Conference on IT to Celebrate S. Charmonman's 72nd Birthday, 2009: 36.1-36.9
+[157] Lijun Ji, Jianxing Yin, Journal of Combinatorial Theory, Series A, Journal of Combinatorial Theory, Series A, 117(3): 236-247, 2009
+[158] Ljubomir Lazic, Snevzana Popovic, Nikos E. Mastorakis, A simultaneous application of combinatorial testing and virtualization as a method for software testing, WSEAS Transactions on Information Science and Applications, 6(11): 1802-1813, 2009
+[159] Pedro Quiz-Ramos, Jose Torres-Jimenez, Nelson Rangel-Valdez, Constant Row Maximizing Problem for Covering Arrays, Mexican International Conference on Artificial Intelligence, 2009: 159-164
+[160] Peyman Nayeri, Charles J. Colbourn, Goran Konjevod, Randomized Postoptimization of Covering Arrays, Combinatorial Algorithms, 5874(40): 408-419, 2009
+[161] Renee C. Bryce, Charles J. Colbourn, A density-based greedy algorithm for higher strength covering arrays, Software Testing, Verification and Reliability, 19(1): 37-53, 2009
+[162] Robert A. Walker II, Charles J. Colbourn, Tabu search for covering arrays using permutation vectors, Journal of Statistical Planning and Inference, 139(1): 69-80, 2009
+[163] Sandro Fouche, Myra B. Cohen, Adam Porter, Incremental covering array failure characterization in large configuration spaces, International symposium on Software testing and analysis, 2009: 177-188
+[164] Sergiy A. Vilkomir, W Thomas Swain, Jesse H. Poore, Software Input Space Modeling with Constraints among Parameters, International Conference on Computer Software and Applications, 2009: 136-141
+[165] Wenhua Wang, Yu Lei, S. Sampath, Raghu N. Kacker, D. Richard Kuhn, J. Lawrence, A combinatorial approach to building navigation graphs for dynamic web applications, International Conference on Software Maintenance (ICSM), 2009: 211-220
+[166] Wolfgang Grieskamp, Xiao Qu, Xiangjun Wei, Nicolas Kicillof, Myra B. Cohen, Interaction Coverage Meets Path Coverage by SMT Constraint Solving, International Conference on Testing of Software and Communication Systems, 2009: 97-112
+[167] Xiang Chen, Qing Gu, Ang Li, Daoxu Chen, Variable Strength Interaction Testing with an Ant Colony System Approach, Asia-Pacific Software Engineering Conference (ASPEC), 2009: 160-167
+[168] Xiang Chen, Qing Gu, Xin Zhang, Daoxu Chen, Building Prioritized Pairwise Interaction Test Suites with Ant Colony Optimization, International Conference on Quality Software (QSIC), 2009: 347-352
+[169] Xiang Chen, Qing Gu, Xinping Wang, Ang Li, Daoxu Chen, A Hybrid Approach to Build Prioritized Pairwise Interaction Test Suites, International Conference on Computational Intelligence and Software Engineering, 2009: 41643
+[170] Xiao Qu, Configuration aware prioritization techniques in regression testing, International Conference on Software Engineering, 2009: 375-378
+[171] Yang Li, Lijun Ji, Jianxing Yin, Covering arrays of strength 3 and 4 from holey difference matrices, Designs, Codes and Cryptography, 50(3): 339-350, 2009
+[172] Yingxia Cui, Longshu Li, Sheng Yao, A New Strategy for Pairwise Test Case Generation, International Symposium on Intelligent Information Technology Application, 2009: 303-306
+[173] Andrea Calvagna, Angelo Gargantini, A Logic-Based Approach to Combinatorial Testing with Constraints, Proceedings of the 2nd international conference on Tests and proofs (TAP2008), pp.66-83, 2008: 
+[174] Charles J. Colbourn, Strength two covering arrays: existence tables and projection, Discrete Mathematics 308(2008), 772-786., 0(0): , 2008
+[175] Charles J. Colbourn, D.W. McClary, Locating and detecting arrays for interaction faults, Journal of Combinatorial Optimization, 15, 17-48, 2008, 0(0): , 2008
+[176] Conrado Martínez, Lucia Moura, Daniel Panario, Brett Stevens, Algorithms to Locate Errors Using Covering Arrays, Proceedings of the 8th Latin American conference on Theoretical informatics (LATIN2008), pp.504-519, 2008: 
+[177] D. Richard Kuhn, Raghu Kacker, Yu Lei, Automated Combinatorial Test Methods  Beyond Pairwise Testing, Journal of Defense Software Engineering, 2008, 22-26, 0(0): , 2008
+[178] Daniel Lopez-Escogido, Jose Torres-Jimenez,Eduardo Rodriguez-Tello, Nelson Rangel-Valde, Strength Two Covering Arrays Construction Using a SAT Representation, Proceedings of the 7th Mexican International Conference on Artificial Intelligence: Advances in Artificial Intelligence (MICAI2008), 2008: 
+[179] George B. Sherwood, Optimal and near-optimal mixed covering arrays by column expansion, Discrete Mathematics, Volume 308, Issue 24, 28 December 2008, Pages 6022-6035, 0(0): , 2008
+[180] Jun Yan, Jian Zhang, A backtracking search tool for constructing combinatorial test suites, Journal of Systems and Software 81(10): 1681-1693, 2008, 0(0): , 2008
+[181] Man V.M. Nguyen, Some new constructions of strength 3 mixed orthogonal arrays, Journal of Statistical Planning and Inference, 138, 220-233, 2008, 0(0): , 2008
+[182] Michael Forbes, Jim Lawrence,Yu Lei, Raghu N. Kacker, D. Richard Kuhn, Refining the In-Parameter-Order Strategy for Constructing Covering Arrays, Journal of Research of the National Institute of Standards and Technology, 113, 287-297, 2008, 0(0): , 2008
+[183] Mohammad F.J. Klaib, Kamal Z. Zamli,
+Nor Ashidi M. Isa, Mohammed I. Younis, Rusli Abdullah, G2Way - A Backtracking Strategy for Pairwise Test Data Generation, Proceedings of the 15th Asia Pacific Software Engineering Conference (APSEC2008), pp.463-370, 2008: 
+[184] Mohammed I. Younis, Kamal Zuhairi Zamli, and Nor Ashidi Mat Isa, IRPS  An Efficient Test Data Generation Strategy for Pairwise Testing, I. Lovrek, R.J. Howlett, and L.C. Jain (Eds.): KES 2008, Part I, LNAI 5177, 2008, 493-500, 2008: 
+[185] Myra B. Cohen, B. Dwyer, Jiangfan Shi, Constructing Interaction Test Suites for Highly-Configurable Systems in the Presence of Constraints: A Greedy Approach, IEEE Transactions on Software Engineering, vol.34, no.5, pp.633-650, 2008, 0(0): , 2008
+[186] Myra B. Cohen, Charles J. Colbourn, Alan C.H. Ling, Constructing Strength Three Covering Arrays with Augmented Annealing, Discrete Mathematics, Volume 308, Issue 13, 6 July 2008, Pages 2709-2722., 0(0): , 2008
+[187] Peter Danziger, Eric Mendelsohn, Lucia Moura, Brett Stevens, Covering Arrays Avoiding Forbidden Edges, COCOA 2008: 296-308, 2008: 
+[188] Rick Kuhn, Yu Lei, Raghu Kacker, Practical combinatorial testing beyond pairwise, IEEE Computer Society, 2008, 19-23, 0(0): , 2008
+[189] Shin Kimoto, Tatsuhiro Tsuchiya, Tohru Kikuno, Pairwise Testing in the Presence of Configuration Change Cost, Second International Conference on Secure System Integration and Reliability Improvement (SSIRI2008), 2008: 
+[190] Wenhua Wang, Sreedevi Sampath, Yu Lei, Raghu Kacker, An Interaction-Based Test Sequence Generation Approach for Testing Web Application, IEEE International Conference on High Assurance Systems Engineerng (HASES2008), 2008: 
+[191] Xiao Qu, Myra B. Cohen, Gregg Rothermel, Configuration-aware regression testing: an empirical study of sampling and prioritization, Proceedings of the International Symposium on Software Testing and Analysis (ISSTA2008), 75-86, 2008: 
+[192] Yu Lei, Raghu Kacker, D. Richard Kuhn, Vadim Okun, James Lawrence, IPOG/IPOG-D: efficient test generation for multi-way combinatorial testing, Software Testing, Verification and Reliability, 18(3), 125-148, 2008, 0(0): , 2008
+[193] Zainal Hisham Che Soh, Syahrul Afzal Che Abdullah, Kamal Zuhari Zamli, A Parallelization Strategies of Test Suites Generation for t-way Combinatorial Interaction Testing, Information Technology, 2008. ITSim 2008. International Symposium on, 2008: 
+[194] Sreedevi Sampath, Renee C. Bryce, Gokulanand Viswanath, Vani Kandimalla, A. Gunes Koru, Prioritizing User-Session-Based Test Cases for Web Applications Testing, International Conference on Software Testing, Verification, and Validation, 2008: 141-150
+[195] Ziyuan Wang, Baowen Xu, Changhai Nie, Greedy Heuristic Algorithms to Generate Variable Strength Combinatorial Test Suite, International Conference on Quality Software, 2008: 155-160
+[196] Chen-Fang Tsai, Kuo-Ming Chao, The Contingent Design for the Optimal Parameter Settings of Genetic Algorithms, The 12th International Conference on Computer Supported Cooperative Work in Design (CSCWD2008), 2007: 
+[197] Christine T. Cheng, The test suite generation problem: Optimal instances and their implications, Discrete Applied Mathematics, 2007, 155, 1943-1957, 0(0): , 2007
+[198] F. Dadeau, Y. Ledru, L. du Bousquet, Directed Random Reduction of Combinatorial Test Suites, Proceedings of the 2nd International Workshop on Random Testing (RT2007), 2007: 
+[199] F. Dadeau, Y. Ledru, L. du Bousquet, Measuring a Java Test Suite Coverage Using JML Specifications, Electronic Notes in Theoretical Computer Science, 2007, 190, 21-32, 0(0): , 2007
+[200] Mats Grindal, Handling Combinatorial Explosion in Software Testing, University of Linköping, 2007, 2007
+[201] Mats Grindal, Jeff Offutt, Input Parameter Modeling for Combination Strategies, Proceedings of the IASTED International Conference on Software Engineering (SE), pp.255-260, 2007, 2007: 
+[202] Mats Grindal, Jeff Offutt, Jonas Mellin, Managing Conflicts when Using Combination Strategies to Test Software, Proceedings of the Australian Software Engineering Conference (ASWEC2007), Melbourne, Australia, April, 2007: 255-264, 2007: 
+[203] Myra B. Cohen, Matthew B. Dwyer, Jiangfan Shi, Exploiting Constraint Solving History to Construct Interaction Test Suites, Proceedings of the Testing: Academic and Industrial Conference Practice and Research Techniques, Washington, DC, USA, 121-132., 2007: 
+[204] Myra B. Cohen, Matthew B. Dwyer, Jiangfan Shi, Interaction Testing of Highly-Configurable Systems in the Presence of Constraints, Proceedings of the International Symposium on Software Testing and Analysis (ISSTA2007), London, England, United Kingdom, July 9-12, 2007: 129-139., 2007: 
+[205] R. Krishnan, S. Murali Krishna, P. Siva Nandhan, Combinatorial Testing: Learnings from our Experience, ACM SIGSOFT Software Engineering Notes, vol.32, no.3, pp.1-8, 2007, 0(0): , 2007
+[206] Renee C. Bryce, Atif M. Memon, Test Suite Prioritization by Interaction Coverage, In Proceedings of Domain-Specific Approaches to Software Test Automation Workshop, Dubrovnik, Croatia, September, 2007., 2007: 
+[207] Renee C. Bryce, Charles J. Colbourn, One-Test-at-a-Time Heuristic Search for Interaction Test Suites, Proceedings of the 9th annual conference on Genetic and evolutionary computation, July 711, London, England, United Kingdom., 2007, 2007: 
+[208] Renee C. Bryce, Charles J. Colbourn, The Density Algorithm for Pairwise Interaction Testing, Software Testing, Verification and Reliability, 17(3): 159-182, 2007, 0(0): , 2007
+[209] Renee C. Bryce, Yinong Chen, Charles J. Colbourn, Biased covering arrays for progressive ranking and composition of Web Services, Journal of Simulation and Process Modelling, Volume 3, Numbers 1-2, 26 July 2007 , pp. 80-87(8), 0(0): , 2007
+[210] S. Fouche , Myra B. Cohen, Adam Porter, Towards incremental adaptive covering arrays, ACM SIGSOFT Symposium on the Foundation of Software Engineering (FSE2007) (Poster Paper), September 2007, pp.557-560, 2007: 
+[211] Xiao Qu, Myra B. Cohen, Katherine M. Woolf, Combinatorial Interaction Regression Testing: A Study of Test Case Generation and Prioritization, International Conference on Software Maintenance (ICSM2007), Paris, France, October 2007., 2007: 
+[212] Xu Yuan, Myra B. Cohen, Atif M. Memon, Covering array sampling of input event sequences for automated GUI testing, The International Conference on Automated Software Engineering (ASE) (short paper), Atlanta, GA, November 2007, pp. 405-408, 2007: 
+[213] Y. Ledrua, L. du Bousqueta, F. Dadeaua, F. Alloutia, A Case Study in Matching Test and Proof Coverage, Electronic Notes in Theoretical Computer Science, 2007, 190, 73-84, 0(0): , 2007
+[214] Yingshan Zhang, Orthogonal arrays obtained by repeating-column difference matrices, Discrete Mathematics, (307)2007, 246-261, 0(0): , 2007
+[215] Yu Lei, R. H. Carver, Raghu Kacher, D.C. Kung, A combinatorial testing strategy for concurrent programs, Software Testing, Verification and Reliability, 17, 4, 207-225., 0(0): , 2007
+[216] Yu Lei, Raghu Kacher, D. Richard Kuhn, Vadim Okun, James Laerence, IPOG: A General Strategy for T-Way Software Testing, The 14th IEEE International Conference and Workshops on the Engineering of Computer-Based Systems (ECBS2007)., 2007: 
+[217] Ziyuan Wang, Changhai Nie, Baowen Xu, Generating Combinatorial Test Suite for Interaction Relationship, Proceedings of the 4th International Workshop on Software Quality Assurance (SOQUA2007), Dubrovnik, Croatia, September 3-4, 2007: 55-61., 2007: 
+[218] A. Hartman, Software and Hardware Testing Using Combinatorial Covering Suites, Graph Theory, Combinatorics and Algorithms, 34, 237-266, 2006, 0(0): , 2006
+[219] Brahim Hnich, Steven D. Prestwich, Evgeny Selensky, Barbara M. Smith, Constraint Models for the Covering Test Problem, Constraints, 2006, 11(2-3): 199-219., 0(0): , 2006
+[220] Cemal Yilmaz, Myra B. Cohen, Adam Porter, Covering Arrays for Efficient Fault Characterization in Complex Configuration Spaces, IEEE Transaction on Software Engineering, vol.32, no.1, pp.20-34, 2006, 0(0): , 2006
+[221] Changhai Nie, Baowen Xu, Liang Shi, Ziyuan Wang, A New Heuristic for Test Generation for Pair-wise Testing, In Proceedings of the 18th International Conference on Software Engineering and Knowledge Engineering (SEKE2006), San Francisco Bay, USA, July 5-7: 517-521., 2006: 
+[222] Nie Changhai, Xu Baowen, Wang Ziyuan, Shi Liang, Generating optimal test set for neighbor factors combinatorial testing, Proceedings of the 6th International Conference on Quality Software (QSIC2006), Beijing, China, October 27-18, 2006: 259-265., 2006: 
+[223] D. Richard Kuhn, V. Okun, Pseudo-Exhaustive Testing for Software, The 30th IEEE/NASA Software Engineering Workshop (SEW2006), 2006: 
+[224] Jacek Czerwonka, Pairwise Testing in Real World: Practical Extensions to Test Case Generator, In Proceedings of 24th Pacific Northwest Software Quality Conference, Portland, Oregon, USA, October 9-11, 2006: 419-430., 2006: 
+[225] Jun Yan, Jian Zhang, Backtracking Algorithms and Search Heuristics to Generate Test Suites for Combinatorial Testing, Proceedings of the 30th Annual International Computer Software and Applications Conference (COMPSAC2006), 2006: 
+[226] L. Zekaoui, Mixed Covering Arrays On Graphs and Tabu Search Algorithms, University of Ottawa, 2006, 2006
+[227] Mats Grindal, Birgitta Lindström, Jeff Offutt, Sten F. Andler, An Evaluation of Combination Strategies for Test Case Selection, Empirical Software Engineering, 11: 583-611, 2006, 0(0): , 2006
+[228] Mats Grindal, Jeff Offutt, Jonas Mellin, Handling Constraints in the Input Space when Using Combination Strategies for Software Testing, Technical Report HS-IKI-TR-06-01, School of Humanities and Informatics, University of Skovde. January 27, 2006., 2006
+[229] Myra B. Cohen, Joshua Snyder, Gregg Rothermel, Testing Across Configurations: Implications for Combinatorial Testing, ACM SIGSOFT Software Engineering Notes, 31(6):1-9, 2006, 0(0): , 2006
+[230] Myra B. Cohen, Matthew B. Dwyer, J. S., Coverage and Adequacy in Software Product Line Testing, Proceedings of the ISSTA workshop on Role of software architecture for testing and analysis, Portland, Maine, USA, 2006, 2006: 
+[231] Renee C. Bryce, Ajitha Rajan, M. P. H., Interaction Testing in Model-Based Development: Effect on Model-Coverage, Proceedings of the 13th Asia Pacific Software Engineering Conference (APSEC2006), 259-268, 2006: 
+[232] Renee C. Bryce, Charles J. Colbourn, Prioritized Interaction Testing for Pair-wise Coverage with Seeding and Constraints, Information and Software Technology, 2006, 48(10): 960-970., 0(0): , 2006
+[233] Renee Cathryn Turban, Algorithms for Covering Arrays, Arizona State University, May, 2006., 2006
+[234] Brahim Hnich, Steven Prestwich, Evgeny Selensky, Constraint-Based Approaches to the Covering Test Problem, Joint Annual Workshop of ERCIM/CoLogNet on Constraint Solving and Constraint Logic Programming (CSCLP2005), 2005: 
+[235] C. Lott, A. Jain, S. Dalal, Modeling Requirements for Combinatorial Software Testing, In Proceedings of the first international workshop on Advances in Model-based (A-MOST2005), St. Louis, Missouri, USA., 2005: 
+[236] Changhai Nie, Baowen Xu, Liang Shi, Guowei Dong, Automatic Test Generation for N-way Combinatorial Testing, The 2nd International Workshop on Software Quality (SOQUA 2005), Fair and Convention Center, Erfurt, Germany, September 20-22, 2005, 2005: 
+[237] Charles J. Colbourn, Sosina S. Martirosyan, Gary L. Mullen, Dennis Shasha, George B. Sherwood, Joseph L.Yucas, Products of Mixed Covering Arrays of Strength Two, Journal of Combinatorial Designs, 14(2): 124-138, 2005, 0(0): , 2005
+[238] Charles J. Colbourn, Yinong Chen, Wei-Tek Tsa, Progressive Ranking and Composition of Web Services Using Covering Arrays, The 10th International Workshop on Object-Oriented Real-Time Dependable Systems (WORDS2005), Sedona, Arizona, USA, February 2-4, 2005:179-185., 2005: 
+[239] Dean S. Hoskins, Charles J. Colbourn, Douglas C. Montgomery, Software Performance Testing using Covering Arrays: Efficient Screening Designs with Categorical Factors, The 5th International Workshop on Software and Performance (WOSP2005), Palma de Mallorca, Spain, July 12-14, 2005., 2005: 
+[240] George B. Sherwood, Sosina S. Martirosyan, Charles J. Colbourn, Covering Arrays of Higher Strength from Permutation Vectors, Journal of Combinatorial Designs, 14(3): 202-213, 2005, 0(0): , 2005
+[241] Kera Z. Bell, M. A. V., On effectiveness of pairwise methodology for testing network-centric software, International Conference on Information and Communications Technology, Cairo, Egypt, Dec.2005, 221-235, 2005: 
+[242] Lei Xu, Baowen Xu, Changhai Nie., Testing and Fault Diagnosis for Web Application Compatibility Based on Combinatorial Method, International Conference on  Parallel and Distributed Processing and Applications, Workshops (ISPA2005), pp. 619-626, 2005, 2005: 
+[243] Liang Shi, Changhai Nie, Baowen Xu, A Software Debugging Method Based on Pairwise Testing, International Conference on Computational Science (ICCS2005), May 22-25, 2005, Atlanta, USA., 2005: 
+[244] Mats Grindal, Jeff Offutt, Sten F. Andler, Combination Testing Strategies: A Survey, Software Testing, Verification and Reliability, 2005, 15, 167199, 0(0): , 2005
+[245] Renee C. Bryce, Automatic Generation of High Coverage Usability Tests, International Conference on Human Factors in Computing Systems (CHI2005), Portland, Oregon, USA, April 2-7, 1108-1109., 2005: 
+[246] Renee C. Bryce, Charles J. Colbourn, Constructing Interaction Test Suites with Greedy Algorithms, The 20th IEEE/ACM international Conference on Automated Software Engineering (ASE2005), Long Beach, California, USA, November 7-11, 2005. 440-443., 2005: 
+[247] Renee C. Bryce, Charles J. Colbourn, Test Prioritization for Pairwise Interaction Coverage, ACM SIGSOFT Software Engineering Notes, 30(4): 1-7, 2005, 0(0): , 2005
+[248] Renee C. Bryce, Charles J. Colbourn, Myra B. Cohen, A Framework of Greedy Methods for Constructing Interaction Test Suites, Proceedings of the 27th international conference on Software engineering (ICSE2005), St. Louis, Missouri, USA, May 15-21, 2005: 146-155, 2005: 
+[249] Soumen Maity , Amiya Nayak, Improved Test Generation Algorithms for Pair-Wise Testing, In Proceedings of the 16th International Symposium on Software Reliability Engineering (ISSRE2005), Chicago, Illinois, USA, November 8-11, 2005., 2005: 
+[250] Ahmed M. Salem, Kamel Rekab, James A. Whittaker, Prediction of Software Failures through Logistic Regression, Information and Software Technology, vol.46, no.12, pp.781-789, 2004, 0(0): , 2004
+[251] Alan Hartman, Leonid Raskin, Problems and Algorithms for Covering Arrays, Discrete Mathematics, vol.284, no.1, pp.149-156, 2004, 0(0): , 2004
+[252] Brahim Hnich, Steven Prestwich, Evgeny Selensky, Modeling the Covering Test Problem, Joint Annual Workshop of ERCIM/CoLogNet on Constraint Solving and Constraint Logic Programming (CSCLP2004), 2004: 
+[253] Charles J. Colbourn, Combinatorial Aspects of Covering Arrays, Le Matematiche (Catania), 2004, 58, 121-167, 0(0): , 2004
+[254] Charles J. Colbourn, Myra B. Cohen, Renee C. Turban, A Deterministic Density Algorithm for Pairwise Interaction Coverage, In Proceedings of IASTED International Conference on Software Engineering (SE2004), Innsbruck, Austria, February, 2004: 345-352., 2004: 
+[255] D. Richard Kuhn, Dolores R. Wallace, Software Fault Interactions and Implications for Software Testing, IEEE Transaction on Software Engineering, 30(6): 1-4, 2004, 0(0): , 2004
+[256] Dean S. Hoskins, Renee Turnban, Charles J. Colbourn, Experimental Designs in Software Engineering: D-Optimal and Covering Array Designs, Proceedings of the ACM workshop on Interdisciplinary Software Engineering Research (WISER2004), 2004: 
+[257] James Bach, Patrick J. Schreoder, Pairwise Testing - A Best Practice That Isn't, In Proceedings of the 22nd Pacific Northwest Software Quality Conference, October 12-13, 2004, 180-196., 2004: 
+[258] Kari J. Nurmela, Upper Bounds for Covering Arrays by Tabu Search, Discrete Applied Mathematics, 138(1-2): 143-152, 2004, 0(0): , 2004
+[259] Mats Grindal, Birgitta Lindstrom, Jeff Offutt, Sten F. Andler, An Evaluation of Combination Strategies for Test Case Selection, Technical Report HS-IDA-TR-03-001. Department of Computer Science, University of Skovde. October 15, 2004, 2004
+[260] Myra B. Cohen, Designing Test Suites for Software Interaction Testing, The University of Auckland,, 2004, 2004
+[261] Patrick J. Schroeder, Pankaj Bolaki, Vijayram Gopu., Comparing the Fault Detection Effectiveness of N-way and Random Test Suites, Proceedings of the 15th International Symposium on Empirical Software Engineering (ISESE), 2004: 
+[262] Toshiaki Shiba, Tatsuhiro Tsuchiya, Tohru Kikuno, Using Artificial Life Techniques to Generate Test Cases for Combinatorial Testing, Proceedings of the 28th International Computer Software and Applications Conference (COMPSAC), pp.72-78, 2004, 2004: 
+[263] Adrian Dumitrescu, Efficient Algorithms for Generation of Combinatorial Covering Suites, Proceedings of 14th Annual International Symposium on Algorithms and Computation (ISAAC2003), Kyoto, Japan, December 15-17, 2003, 2003: 
+[264] Baowen Xu, Changhai Nie, Liang Shi, William C. Chu, Hongji Yang, Huowang Chen, Test Plan Design for Software Configuration Testing, International Conference on Software Engineering Research and Practice (SERP2003), 2003: 
+[265] Christine T. Cheng, Adrian Dumitrescu, Patrick J. Schroeder, Generating Small Combinatorial Test Suites to Cover Input-Output Relationships, Proceedings of 3rd International Conference on Quality Software (QSIC2003), November, 2003: 76-82., 2003: 
+[266] Gregory T. Daich, Testing Combinations of Parameters Made Easy, IEEE Conference on Systems Readiness Technology (AUTOTESTCON2003), pp.379-384., 2003: 
+[267] Lee Copeland, "Pairwise Testing", Chapter 6 of A Practitioner's Guide to Software Test Design, Artech House: December 2003, ISBN 158053791X., 2003
+[268] Lei Xu, Changhai Nie, A Browser Compatibility Testing Method Based on Combinatorial Testing, Proceedings of the 3rd International Conference on Web Engineering (ICWE2003), 310-313, 2003: 
+[269] Lucia Moura, John Stardom, Brett Stevens, Alan Williams, Covering Arrays with Mixed Alphabet Sizes, Journal of Combinatorial Designs, 11(6), 413-432, 2003, 0(0): , 2003
+[270] Myra B. Cohen, Charles J. Colbourn, Alan C.H. Ling, Augmenting Simulated Annealing to Build Interaction Test Suites, Proceedings of the 14th International Symposium on Software Reliability Engineering (ISSRE2003), Denver Colorado, November, 2003: 394-405., 2003: 
+[271] Myra B. Cohen, Peter B. Gibbons, Warwick B Mugridge, Charles J. Colbourn, James S. Collofello, Variable Strength Interaction Testing of Components, Proceedings of the 27th International Computer Software and Applications Conference (COMPSAC), pp.413-418, 2003, 2003: 
+[272] Myra B. Cohen, Peter B. Gibbons, Warwick B. Mugridge, Charles J. Colbourn, Constructing Test Suites for Interaction Testing, Proceedings of the 25th International Conference on Software Engineering (ICSE), pp.38-48, 2003, 2003: 
+[273] Soumen Maity, Amiya Nayak, M. Z. N. B. & Srivastava, A., An Improved Test Generation Algorithm for Pair-Wise Testing, Fast Abstract (ISSRE2003), 2003: 
+[274] Syed A. Ghazi, Moataz A. Ahmed, Pair-wise Test Coverage using Genetic Algorithms, Proceedings of the Congress on Evolutionary Computation (CEC), pp.1420-1424, 2003, 2003: 
+[275] Tomas Berling, Per Runeson, Efficient evaluation of multifactor dependent system performance using fractional factorial design, IEEE Transactions on Software Engineering, vol.29, no.9, pp.769-781, 2003, 0(0): , 2003
+[276] Alan W. Williams, Software Component Interaction Testing: Coverage Measurement and Generation of Configurations, Ottawa-Carleton Institute for Computer Science, School of Information Technology and Engineering, University of Ottawa, Canada, 2002., 2002
+[277] Alan W. Williams, Robert L. Probert, Formulation of the Interaction Test Coverage Problem as an Integer Program, Proceedings of the 14th International Conference on the Testing of Communicating Systems (TestCom2002), Berlin, Germany, March 2002: 283-298., 2002: 
+[278] Andreas Blass, Yuri Gurevich, Pairwise Testing, Bulletin of the European Association for Theoretical Computer Science, Number 78, October, 2002: 100-132, 0(0): , 2002
+[279] D. Richard Kuhn, Michael J. Reilly, An Investigation of the Applicability of Design of Experiments to Software Testing, The 27th IEEE/NASA Software Engineering Workshop (SEW2002), USA, December 4-6, 2002: 91-95., 2002: 
+[280] Hongquan Xu, An Algorithm for Constructing Orthogonal and Nearly Orthogonal Arrays With Mixed Levels and Small Runs, American Statistical Association and the American Society for Quality, 44(4), 356-368, 2002, 0(0): , 2002
+[281] James A. Whittaker, "Testing from the User Interface: Inputs and Outputs", Chapter 2 of How to Break Software, A Practical Guide to Testing, Pearson Addison Wesley: May 2002, ISBN 0201796198., 2002
+[282] Kuo-Chung Tai, Yu Lei, A Test Generation Strategy for Pairwise Testing, IEEE Transaction on Software Engineering, vol.28, no.1, pp.109-111, 2002, 0(0): , 2002
+[283] Noritaka Kobayashi, Design and Evaluation of Automatic Test Generation Strategies, Dissertation for PhD, Graduate School of Engineering Science, Osaka University, 2002
+[284] Noritaka Kobayashi, Tsuchiya Tsuchiya, Kikuno Tohru, A New Method for Constructing Pair-wise Covering Designs for Software Testing, Information Processing Letters, 81(2): 85-91, 2002, 0(0): , 2002
+[285] Patrick J. Schroeder, Pat Faherty, Bogdan Korel, Generating Expected Results for Automated Black-Box Testing, The 17th IEEE International Conference on Automated Software Engineering (ASE2002), Edinburgh, UK, 2002: 139-148., 2002: 
+[286] Ahmed M. Salem, A Software Testing Model: Using Design of Experiments (DOE) and Logistic Regression, Dissertation for Ph D, Florida Institute of Technology. Melbourne, Florida, 2001
+[287] Alan W. Williams, Robert L. Probert, A Measure for Component Interaction Test Coverage, IEEE International Computer Software and Applications Conference (COMPSAC2001), Beirut, Lebanon, June 25-29, 2001: 304-311., 2001: 
+[288] J. Stardom, Metaheuristics and the Search for Covering and Packing Arrays, Simon Fraser university, 2001, 2001
+[289] Patrick J. Schroeder, Black-box Test Reduction Using Input-output Analysis, Department of Computer Science, Illinois Institute of Technology, Chicago, Illinois, USA, December, 2001., 2001
+[290] Alan W. Williams, Determination of Test Configurations for Pair-wise Interaction Coverage, Proceedings of the 13th International Conference on the Testing of Communicating Systems (TestCom2000), Ottawa Canada, August, 2000: 59-74., 2000: 
+[291] Jerry Huller, Reducing Time to Market with Combinatorial Design Method Testing, Proceedings of 10th Annual International Council on Systems (INCOSE2000), Minneapolis, MN, USA, July 16-20, 2000., 2000: 
+[292] Patrick J. Schroeder, Bogdan Korel, Black-Box Test Reduction Using Input-Output Analysis, Proceedings of the International Symposium on Software Testing and Analysis (ISSTA2000), Portland, Oregon, USA, August, 2000:21-22., 2000: 
+[293] Yu-Wen Tung, Wafa S. Aldiwan, Automating Test Case Generation for the New Generation Mission Software System, IEEE Arospace Conference, 2000: 431-437, 2000: 
+[294] Charles J. Colbourn, J. H. Dinitz, D. R. Stinson, Applications of Combinatorial Designs to Communications, British Combinatorial Conference, 1999, 1999: 
+[295] Siddhartha R. Dalal, A. Jain, N. Karunanithi, J. M. Leaton, C. M. Lott, G. C. Patton, B. M. Horowitz, Model-based Testing in Practice, Proceedings of the 21st International Conference on Software Engineering (ICSE), pp.285-294, 1999, 1999: 
+[296] Kevin Burr, William Young, Combinatorial Test Techniques: Table-based Automation, Test Generation and Code Coverage, Proceedings of International Conference on Software Testing Analysis and Review (STAR1998), San Diego, USA, October 26-28, 1998., 1998: 
+[297] Siddhartha R. Dalal, A. Jain, N. Karunanithi, J. M. Leaton, C. M. Lott, Model-Based Testing of a Highly Programmable System, Proceedings of the 9th International Symposium on Software Reliability Engineering (ISSRE1998), November 5-7, 1998: 174-178., 1998: 
+[298] Siddhartha R. Dalal, Colin L. Mallows, Factor-Covering Designs for Testing Software, Technometrics, 1998, 40(3): 234-243., 0(0): , 1998
+[299] V.N. Nair, D.A. James, W.K. Erlich, J. Zevallos, A Statistical Assessment of Some Software Testing Strategies and Application of Experimental Design Techniques, Statistica Sinica, vol.8, no.1, pp.165-184, 1998, 0(0): , 1998
+[300] Yu Lei, Kuo-Chung Tai, In-Parameter-Order: A Test Generation Strategy for Pairwise Testing, The 3rd IEEE International High-Assurance Systems Engineering Symposium (HASES1998), 1998: 
+[301] David M. Cohen , Siddhartha R. Dalal, Michael L. Fredman, Gardner C. Patton, The AETG System: An Approach to Testing Based on Combinatorial Design, IEEE Transaction on Software Engineering, vol.23, no.7, pp.437-444, 1997, 0(0): , 1997
+[302] I. S. Dunietz, W. K. Ehrlich, B. D. Szablak, C. L. Mallows, A. Iannino, Applying Design of Experiments to Software Testing, Proceedings of the 19th International Conference on Software Engineering (ICSE1997), Boston Massachusetts, USA, May, 205-215., 1997: 
+[303] Alan W. Williams, Robert L. Prober, A Practical Strategy for Testing Pair-wise Coverage of Network Interfaces, The 7th IEEE International Symposium on Software Reliability Engineering (ISSRE1996), White Plaints, NY, USA, 246-254., 1996: 
+[304] David M. Cohen, Siddhartha R. Dalal, Jesse Parelius, Gardner C. Patton, The Combinatorial Design Approach to Automatic Test Generation, IEEE Software, 1996, 13(5): 83-87., 0(0): , 1996
+[305] P.W.M. John, M.E. Johnson, L.M. Moore, D. Ylvisaker, Minimax Distance Designs in Two-level Factorial Experiments, Journal of Society of Technical Analysts, vol.44, 249-263, 1995, 0(0): , 1995
+[306] David M. Cohen, Siddhartha R. Dalal, A. Kajla, G.C. Patton, The Automatic Efficient Tests Generator (AETG) System, Proceedings of the 5th International Symposium on Software Reliability Engineering (ISSRE1994), Nov 6-9, 1994: 303-309., 1994: 
+[307] Kirk Burroughs, Aridaman Jain, Robert L. Erickson, Improved Quality of Protocol Testing Through Techniques of Experimental Design, IEEE International Conference on Communications (ICC1994), pp.745-752., 1994: 
+[308] R. Brownlie, J. Prowse, M.S. Phadke, Robust Testing of AT&T PMX/StarMAIL Using Oats, AT&T Technical 1992, 41-47, 1992, 1992
+[309] Gadiel Seroussi, Nader H. Bshouty, Vector Sets for Exhaustive Testing of Logic Circuits, IEEE Transaction on Information Theory, 34(3): 513-522, 1988
+[310] K. Tatsumi, Test Case Design Support System, International Conference on Quality Control, 1987: 615-620
+[311] K. Tatsumi, S. Watanabe, Y. Takeuchi, H. Shimokawa, Conceptual support for test case design, International Computer Software and Applications Conference, 1987: 285-290
+[312] Robert Mandl, Orthogonal Latin Squares: An Application of Experimental Design to Compiler Testing, Communications of the ACM, 28(10): 1054-1058, 1985
+[313] R. Fisher, The Arrangement of Field Experiments, Journal of Ministry of Agriculture of Great Britain, 33(0): 503-513, 1926

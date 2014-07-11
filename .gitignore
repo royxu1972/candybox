@@ -3,3 +3,9 @@
 #################
 out/*
 *.idea
+
+#################
+## Sublime
+#################
+.sublime-project
+.sublime-workspace
