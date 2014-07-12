@@ -3,6 +3,7 @@
 
 from collections import namedtuple
 from decimal import Decimal
+from math import sqrt
 
 Point = namedtuple('Point', ['x', 'y', 'z'])
 
@@ -33,9 +34,15 @@ for i in range(0, len(points)-1):
 
 out.append(points[len(points)-1])
 
+
 # out
+dist = Decimal("0.0")
+index = 1
 for each in out:
-	print(str(each.x) + " " + str(each.y) + " " + str(each.z))
+	print(str(index) + " " + str(round(dist,7)) + " " + \
+		str(round(each.x,7)) + " " + str(round(each.y,7)) + " " + str(round(each.z,7)))
 
-
-			
+	if( index != len(out) ):
+		dist += Decimal( sqrt( + (out[index].x-out[index-1].x)**2 + \
+			(out[index].y-out[index-1].y)**2 + (out[index].z-out[index-1].z)**2 ) )
+		index += 1
