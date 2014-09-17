@@ -19,22 +19,26 @@ class pList:
 		index = 1
 		with open(self.file_name, 'w') as wfile:
 			for r in cur:
-				# [index] + author + title  + publication
-				content = "[" + str(index) + "] " + str(r[4]) + ", " + str(r[5]) + ", " + str(r[6])
+				# [index] + author + title  + "in" + publication
+				content = "[" + str(index) + "] " + str(r[4]) + ", " + str(r[5]) + ", in " + str(r[6])
 
 				# abbr
 				abbr = str(r[7])
-				if( abbr not in ["", "book", "phd", "tech"] ):
+				if( abbr not in ["None", "book", "phd", "tech"] ):
 					content += " (" + abbr + ")"
 
-				if( cur.rownumber < 6 or cur.rownumber > 139 ):
-					if( str(r[2]) == "article" ):
-						content += ", " + str(r[8]) + "(" + str(r[9]) + "): " + str(r[10]) + ", " + str(r[3])
-					elif( str(r[2]) == "inproceedings" ):
-						content += ", " + str(r[3]) + ": " + str(r[10])
-					else:
-						content += ", " + str(r[3])
-
+				# "vol(no): page, year" for article
+				if( str(r[2]) == "article" ):
+					content += ", " + str(r[8]) + "(" + str(r[9]) + "): " + str(r[10]) + ", " + str(r[3])
+				# "year: page" for inproceedings
+				elif( str(r[2]) == "inproceedings" ):
+					content += ", " + str(r[3]) + ": " + str(r[10])
+				# "TechNo, year" for techreport
+				elif( str(r[2]) == "techreport" ):
+					content += ", " + str(r[9]) + ", " + str(r[3])
+				# for phdthesis and book
+				else:
+					content += ", " + str(r[3])
 
 				con = content.encode('UTF-8')
 				#print("content" + str(type(content)))
