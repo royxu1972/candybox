@@ -210,7 +210,7 @@ Nor Ashidi M. Isa, Mohammed I. Younis, Rusli Abdullah, G2Way - A Backtracking St
 [209] Renee C. Bryce, Yinong Chen, Charles J. Colbourn, Biased covering arrays for progressive ranking and composition of Web Services, in Journal of Simulation and Process Modelling, 3(4): 80-87(8), 2007
 [210] S. Fouche , Myra B. Cohen, Adam Porter, Towards incremental adaptive covering arrays, in ACM SIGSOFT Symposium on the Foundation of Software Engineering (FSE), 2007: 557-560
 [211] Xiao Qu, Myra B. Cohen, Katherine M. Woolf, Combinatorial Interaction Regression Testing: A Study of Test Case Generation and Prioritization, in International Conference on Software Maintenance (ICSM), 2007: 255-264
-[212] Xu Yuan, Myra B. Cohen, Atif M. Memon, Covering array sampling of input event sequences for automated GUI testing, in International Conference on Automated Software Engineering (ASE), 2007: 405-408
+[212] Xu Yuan, Myra B. Cohen, Atif M. Memon, Covering array sampling of input event sequences for automated GUI testing, in International Conference on Automated Software Engineering  (ASE), 2007: 405-408
 [213] Y. Ledrua, L. du Bousqueta, F. Dadeaua, F. Alloutia, A Case Study in Matching Test and Proof Coverage, in Electronic Notes in Theoretical Computer Science, 190(2): 73-84, 2007
 [214] Yingshan Zhang, Orthogonal arrays obtained by repeating-column difference matrices, in Discrete Mathematics,, 307(7): 246-261, 2007
 [215] Yu Lei, R. H. Carver, Raghu Kacher, D.C. Kung, A combinatorial testing strategy for concurrent programs, in Software Testing, Verification and Reliability (STVR), 17(4): 207-225, 2007

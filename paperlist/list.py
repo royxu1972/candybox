@@ -8,6 +8,17 @@ import pymysql
 
 class pList:
 	file_name = ""
+
+	generation = "" ;
+	application = "" ;
+	model = "" ;
+	evaluation = "" ;
+	constraint = "" ;
+	prioritization = "" ;
+	diagnosis = "" ;
+	survey = "" ;
+	oracle = "" ;
+
 	def __init__(self, str):
 		self.file_name = str
 
@@ -45,11 +56,61 @@ class pList:
 				#print("con" + str(type(con)))
 				wfile.writelines(con.decode('gbk') + "\n")
 
+				# deal with the field
+				if( str(r[11]) == "Generation" ):
+					self.generation += "[" + str(index) + "], "
+				elif( str(r[11]) == "Application" ):
+					self.application += "[" + str(index) + "], "
+				elif( str(r[11]) == "Model" ):
+					self.model += "[" + str(index) + "], "
+				elif( str(r[11]) == "Evaluation" ):
+					self.evaluation += "[" + str(index) + "], "
+				elif( str(r[11]) == "Constraint" ):
+					self.constraint += "[" + str(index) + "], "
+				elif( str(r[11]) == "Prioritization" ):
+					self.prioritization += "[" + str(index) + "], "
+				elif( str(r[11]) == "Diagnosis" ):
+					self.diagnosis += "[" + str(index) + "], "
+				elif( str(r[11]) == "Survey" ):
+					self.survey += "[" + str(index) + "], "
+				elif( str(r[11]) == "Oracle" ):
+					self.oracle += "[" + str(index) + "], "
+				
 				index += 1
 
 		cur.close()
 		conn.close()
-	
+
+
+		# write field file
+		with open("field.txt", 'w') as wfile:
+			generation = self.generation.encode('UTF-8')
+			wfile.writelines("generation: " + generation.decode('gbk') + "\n")
+
+			application = self.application.encode('UTF-8')
+			wfile.writelines("application: " + application.decode('gbk') + "\n")
+
+			model = self.model.encode('UTF-8')
+			wfile.writelines("model: " + model.decode('gbk') + "\n")
+
+			evaluation = self.evaluation.encode('UTF-8')
+			wfile.writelines("evaluation: " + evaluation.decode('gbk') + "\n")
+
+			constraint = self.constraint.encode('UTF-8')
+			wfile.writelines("constraint: " + constraint.decode('gbk') + "\n")
+
+			prioritization = self.prioritization.encode('UTF-8')
+			wfile.writelines("prioritization: " + prioritization.decode('gbk') + "\n")
+
+			diagnosis = self.diagnosis.encode('UTF-8')
+			wfile.writelines("diagnosis: " + diagnosis.decode('gbk') + "\n")
+
+			survey = self.survey.encode('UTF-8')
+			wfile.writelines("survey: " + survey.decode('gbk') + "\n")
+
+			oracle = self.oracle.encode('UTF-8')
+			wfile.writelines("oracle: " + oracle.decode('gbk') + "\n")
+
 #
 p = pList("out.txt")
 p.execution()
