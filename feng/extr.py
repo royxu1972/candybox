@@ -90,8 +90,46 @@ class Extr:
 				file3.write(self.output2[i] + " " + self.output1[i] + "\n")
 
 
-e = Extr("input1.txt","input2.txt","output.txt")
+class Extr1:
+	def execution(self):
+		file1 = open("input.txt", 'r')
+
+		# output file
+		out1 = open("out1.txt",'w')
+		out2 = open("out2.txt",'w')
+
+		# flag
+		flag = 0
+
+		for line in file1:
+			line = line.strip()
+
+			# if start with "atom"
+			if( line.startswith("atom")):
+				str1 = line[line.index("=")+1:len(line)].strip()
+				out1.write(str1+"\n")
+				#print(str1)
+
+			# if start with "ATOMIC_POSITIONS"
+			if( line.startswith("ATOMIC_POSITIONS")):
+				flag = 1
+				continue
+			if( flag == 1 ):
+				if( len(line) == 0 ):
+					flag = 0
+					continue
+				#print(line)
+				str2 = line[line.index(" ")+1:len(line)].strip()
+				out2.write(str2+"\n")
+				#print(str2)
+
+
+e = Extr1()
 e.execution()
+
+
+# e = Extr("input1.txt","input2.txt","output.txt")
+# e.execution()
 
 
 
