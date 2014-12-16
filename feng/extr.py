@@ -127,7 +127,6 @@ class Extr1:
 e = Extr1()
 e.execution()
 
-
 # e = Extr("input1.txt","input2.txt","output.txt")
 # e.execution()
 
