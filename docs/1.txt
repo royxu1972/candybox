@@ -1,0 +1,22 @@
+<br>
+<h4>Appendix A</h4>
+<img src="images/spl1.png" class="img-responsive" alt="Responsive image">
+
+<h4>Appendix B</h4>
+<img src="images/spl2.png" class="img-responsive" alt="Responsive image">
+
+<h4>Appendix C</h4>
+<img src="images/spl3.png" class="img-responsive" alt="Responsive image">
+
+<h4>Appendix D</h4>
+<ul>
+    <li>Cellphone</li>
+    <li>C. Strike Simple FM</li>
+    <li>SPL SimulES, PnP</li>
+    <li>DS Sample</li>
+    <li>Electronic Drum</li>
+    <li>Smart Home v2.2</li>
+    <li>Video Player</li>
+    <li>Model Transformation</li>
+    <li>Coche Ecologico</li>
+    <li>Printers</li>

@@ -1,0 +1,6 @@
+<br>
+<h4>Appendix A</h4>
+<img src="images/real1.png" class="img-responsive" alt="Responsive image">
+
+<h4>Appendix B</h4>
+<img src="images/real2.png" class="img-responsive" alt="Responsive image">
