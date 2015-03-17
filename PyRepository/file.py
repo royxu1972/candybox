@@ -1,4 +1,4 @@
-#coding=utf-8
+# coding=utf-8
 import os
 
 path = "C:\\Users\\Huayao\\Desktop\\All"

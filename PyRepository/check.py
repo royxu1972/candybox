@@ -1,7 +1,8 @@
-#coding=utf-8
+#!
+# coding: UTF-8
+
 import os
 import pymysql
-
 
 path = r'D:\exp - application'
 sum = 0
