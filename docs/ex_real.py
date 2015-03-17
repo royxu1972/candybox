@@ -20,7 +20,7 @@ def DoTable(table):
 		# main item, colspan
 		if( index + 1 < len(columns) and item != columns[index+1].text ):
 			print(item)
-			output += "<tr><th colspan=5>" + item + "</th></tr>\n"
+			output += "<tr><th colspan=5><h4><em>" + item + "</em></h4></th></tr>\n"
 			index += 1
 
 		else:
@@ -47,24 +47,24 @@ def DoTable(table):
 
 
 out = "<div class='panel panel-default'>\n"
-out += "<div class='panel-heading'><h4>Application (92)</h4></div>\n"
+out += "<div class='panel-heading'><h3>Application Software(92)</h3></div>\n"
 out += DoTable(document.tables[0])
 out += "</div><br>\n\n"
 
 out += "<div class='panel panel-default'>\n"
-out += "<div class='panel-heading'><h4>System and Development (36)</h4></div>\n"
+out += "<div class='panel-heading'><h3>System Software(36)</h3></div>\n"
 out += DoTable(document.tables[1])
 out += "</div><br>\n\n"
 
 out += "<div class='panel panel-default'>\n"
-out += "<div class='panel-heading'><h4>Web Application (32)</h4></div>\n"
+out += "<div class='panel-heading'><h3>Web Application (32)</h3></div>\n"
 out += DoTable(document.tables[2])
 out += "</div><br>\n\n"
 
 out += "<div class='panel panel-default'>\n"
-out += "<div class='panel-heading'><h4>Mobile Application (40)</h4></div>\n"
+out += "<div class='panel-heading'><h3>Mobile Application (40)</h3></div>\n"
 out += DoTable(document.tables[3])
 
-f1 = open('D:\\Workspace\\DocApplication\\real.html','w')
+f1 = open('D:\\Workspace\\WebReportDoc\\real.html','w')
 f1.write(out)
 f1.close

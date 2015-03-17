@@ -36,7 +36,7 @@ def convert(filename):
 	# write
 	tp = filename[0:filename.find('.')].split()
 	name = tp[0] + tp[1]
-	f1 = open( "D:\\Workspace\\DocApplication\\docs\\" + name + '.html','w')
+	f1 = open( "D:\\Workspace\\WebReportDoc\\docs\\" + name + '.html','w')
 	f1.write(output)
 	f1.close
 	return name
@@ -47,7 +47,7 @@ def appendcontent():
 	f = open('1.txt')
 	all_text = f.read()
 	f.close()
-	f = open( "D:\\Workspace\\DocApplication\\docs\\2006SPL.html",'a')
+	f = open( "D:\\Workspace\\WebReportDoc\\docs\\2006SPL.html",'a')
 	f.write(all_text)
 	f.close
 
@@ -55,7 +55,7 @@ def appendcontent():
 	f = open('2.txt')
 	all_text = f.read()
 	f.close()
-	f = open( "D:\\Workspace\\DocApplication\\docs\\2011real.html",'a')
+	f = open( "D:\\Workspace\\WebReportDoc\\docs\\2011real.html",'a')
 	f.write(all_text)
 	f.close
 
