@@ -1,0 +1,76 @@
+﻿[1] Huayao Wu, Changhai Nie, Fei-Ching Kuo. Test Suite Prioritization by Switching Cost. In: Lisa O’Conner ed. Proceedings of the 7th International Conference on Software Testing, Verification and Validation Workshops (ICSTW). Cleveland, USA: IEEE, 2014: 133-142
+[2] Xiaohua Li, Zhao Dong, Huayao Wu, Changhai Nie, Kai-Yuan Cai. Refining a Randomized Post-optimization Method for Covering Arrays. In: Lisa O’Conner ed. Proceedings of the 7th International Conference on Software Testing, Verification and Validation Workshops (ICSTW). Cleveland, USA: IEEE, 2014: 143-152
+[3] Huayao Wu, Changhai Nie. An overview of search based combinatorial testing. In: Phil McMinn eds. The 7th International Workshop on Search Based Software Testing (SBST). Hyderabad, India: ACM, 2014, 27-30
+[4] 钮鑫涛，聂长海，Alvin Chan， 组合测试故障定位的关系树模型，计算机学报，2014，37（12）：2505-2518
+
+[1] Changhai Nie, Siyang Chen, Hareton Leung, Kai-Yuan Cai: A Case Study of Adaptive Combinatorial Testing. COMPSAC Workshops 2013: 47-52
+[2] Changhai Nie, Jing Jiang, Huayao Wu, Hareton Leung, Charles J. Colbourn: Empirically Identifying the Best Greedy Algorithm for Covering Array Generation. ICST Workshops 2013: 239-248
+[3] Xintao Niu, Changhai Nie, Yu Lei, Alvin T. S. Chan: Identifying Failure-Inducing Combinations Using Tuple Relationship. ICST Workshops 2013: 271-280
+[4] Changhai Nie, Hareton Leung, Kai-Yuan Cai: Adaptive Combinatorial Testing. QSIC 2013: 284-287
+[5] 聂长海，蒋静，覆盖表生成的可配置贪心算法优化，软件学报，2013/7, 1469-1483
+[6] 聂长海 ，软件测试的概念与方法 ，北京: 清华大学出版社, 205页, 2013/05/01
+
+[1] 吴化尧 聂长海，覆盖表生成的粒子群算法:参数优化和自适应算法，小型微型计算机系统，2012（10）:2259-2267
+[2] 李杰，聂长海，梁亚澜 软件兼容性测试的故障定位，第七届中国测试学术会议，2012， 6月23-24，中国，杭州，294-301
+[3] 黄海波，吴化尧，聂长海 手机通话功能的组合测试，第七届中国测试学术会议，2012， 6月23-24，中国，杭州，49-54
+[4] Changhai Nie, Huayao Wu, Liang Yalan, Hareton Leung, Fei-Ching Kuo and Zheng Li Search Based Combinatorial Testing, The 19th Asia-Pacific Software Engineering Conference (APSEC 2012). 2012, Dec. Hong Kong.
+[5] Jie Li, Changhai Nie, Yu Lei: Improved Delta Debugging Based on  Combinatorial Testing. QSIC 2012: 102-105
+[6] 梁亚澜, 聂长海. 覆盖表生成的遗传算法配置参数优化. 计算机学报 , 2012, (07):1522-1539
+
+[1] Changhai Nie, Hareton Leung. A survey of combinatorial testing, ACM Computing Survey, vol. 43, issue # 2, Jan. 2011.
+[2] Changhai Nie, Hareton Leung. The minimal failure-causing schema of combinatorial testing, ACM Transaction on Software Engineering and Methodology (TOSEM), 20(4), 2011. 
+[3] Liang Yalan, Changhai Nie, Jonathan M. Kau_man, Gregory M. Kapfhammer, and Hareton Leung. Empirically identifying the best genetic algorithm for covering array generation. In Proceedings of the 3rd International Symposium on Search Based Software Engineering, Fast Abstract Track, Szeged, Hungary, September 2011.
+[4] 聂长海 关于软件测试的几点思考. 计算机科学，2011/2，1-3,22
+[5] Jing Jiang, Changhai Nie. Search the best greedy algorithm with Hill climbing experiments for covering array generation. In proceedings of the 2011 International Conference on Software Engineering Research and Practice (SERP’11), 2011.
+[6] Jing Jiang, Changhai Nie. Find the best greedy algorithm with Base Choice experiments for covering array generation. In proceedings of the International Workshop on Evidential Assessment of Software Technologies (EAST 2011), 2011.
+[7] 孙文雯,聂长海.一种组合测试用例生成的可配置混合算法. 计算机科学，2011, 38 (8) : 130-135.
+
+[1] 聂长海,徐宝文. 一种最小测试用例集生成方法. 计算机学报, 2003, 26 (12): 1690-1695
+[2] 聂长海,徐宝文. 基于接口参数的黑箱测试用例自动生成算法. 计算机学报, 2004, 27 (03): 382-388 
+[3] 聂长海,徐宝文,史亮.一种新的二水平多因素系统两两组合覆盖测试数据生成算法，计算机学报, 2006,29(6):841-848
+[4] 徐宝文,聂长海,史亮,陈火旺. 一种基于组合测试的软件故障调试方法. 计算机学报, 2006, 29(1):124-131
+[5] 史亮,聂长海,徐宝文. 基于解空间树的组合测试数据生成, 计算机学报, 2006,29(6):849-857
+[6] 王子元,聂长海,徐宝文,史亮. 相邻因素组合测试用例集的最优生成方法, 计算机学报,2007,30(2):200-211
+[7] 章晓芳,徐宝文,聂长海, 史亮.一种基于测试需求约简的测试用例集优化方法, 软件学报,2007,18(4):821-831
+[8] 屈波,聂长海,徐宝文. 基于测试用例设计信息的回归测试优先级算法. 计算机学报, 2008, 31 (03): 431-439
+[9] 张德平,聂长海,徐宝文. 基于Markov决策过程用交叉熵方法优化软件测试. 软件学报, 2008, 19 (10): 2770-2779
+[10] 董国伟,聂长海,徐宝文. 基于程序路径分析的有效蜕变测试. 计算机学报, 2009, (05): 1002-1013
+[11] 谢晓园,徐宝文,史亮,聂长海. 面向路径覆盖的演化测试用例生成技术(英文). 软件学报, 2009, (12): 3117-3137
+[12] 张德平,聂长海,徐宝文. 软件可靠性评估的重要抽样方法. 软件学报, 2009, (10): 2859-2867
+[13] 查日军,张德平,聂长海,徐宝文. 组合测试数据生成的交叉熵与粒子群算法及比较. 计算机学报, 10期, pp 1-14, 2010/10/15 
+[15] Changhai Nie, Hareton Leung, and Baowen Xu. Using computational search to generate 2-way covering array. In Proceedings of the 1st International Symposium on Search Based Software Engineering (SSBSE’09), Fast Abstract. Cumberland Lodge, Windsor, UK May 13-May 15, 2009.
+[16] Changhai Nie, Baowen Xu, Ziyuan Wang and Liang Shi. Generating Optional Test Set for Neighbor Factors Combinatorial Testing, QSIC’2006. Beijing, 259-265.
+[17] Changhai Nie, Baowen Xu, Liang Shi, Guowei Dong, Automatic Test Generation for N-way Combinatorial Testing. Second International Workshop on Software Quality (SOQUA 2005),  Lecture Notes in Computer Science 3712, 2005, 203-211
+[18] Changhai Nie, Baowen Xu, Liang Shi, Ziyuan Wang. A new heuristic for test suite generation for pair-wise testing, seke’2006, San Fransisco：517-522
+[19] Deping Zhang, Changhai Nie, Baowen Xu: A Markov Decision Approach to Optimize Testing Profile in Software Testing. ICYCS 2008: 1205-1210
+[20] Ziyuan Wang, Baowen Xu, Changhai Nie: Greedy Heuristic Algorithms to Generate Variable Strength Combinatorial Test Suite. QSIC 2008: 155-160
+[21] Xiaofang Zhang, Baowen Xu, Zhenyu Chen, Changhai Nie, Leifang Li: An Empirical Evaluation of Test Suite Reduction for Boolean Specification-Based Testing (Short Paper). QSIC 2008: 270-275
+[22] Zhenyu Chen, Baowen Xu, Xiaofang Zhang, Changhai Nie: A novel approach for test suite reduction based on requirement relation contraction. SAC 2008: 390-394
+[23] Zhenyu Chen, Baowen Xu, Changhai Nie: A detectability analysis of fault classes for Boolean specifications. SAC 2008: 826-830
+[24] Bo Qu, Changhai Nie, Baowen Xu, Xiaofang Zhang: A Dynamic Adjusting Method for Test Case Prioritization. SEKE 2008: 484-487
+[25] Bo Qu, Changhai Nie, Baowen Xu, Xiaofang Zhang: Test Case Prioritization for Black Box Testing. COMPSAC (1) 2007: 465-474
+[26] Zhenyu Chen, Baowen Xu, Changhai Nie: Comparing Fault-based Testing Strategies of General Boolean Specifications. COMPSAC (1) 2007: 621-622
+[27] Xiaofang Zhang, Changhai Nie, Baowen Xu, Bo Qu: Test Case Prioritization Based on Varying Testing Requirement Priorities and Test Case Costs. QSIC 2007: 15-24
+[28] Guowei Dong, Changhai Nie, Baowen Xu, Lulu Wang: An Effective Iterative Metamorphic Testing Algorithm Based on Program Path Analysis. QSIC 2007: 292-297
+[29] Ziyuan Wang, Changhai Nie, Baowen Xu: Generating combinatorial test suite for interaction relationship. SOQUA 2007: 55-61
+[30] Xiaoyuan Xie, Liang Shi, Changhai Nie, Yanxiang He, Baowen Xu: A Dynamic Optimization Strategy for Evolutionary Testing. APSEC 2005: 568-575
+[31] Xiaoyuan Xie, Baowen Xu, Changhai Nie, Liang Shi, Lei Xu: Configuration Strategies for Evolutionary Testing. COMPSAC (2) 2005: 13-14
+[32] Lei Xu, Baowen Xu, Changhai Nie: Testing and Fault Diagnosis for Web Application Compatibility Based on Combinatorial Method. ISPA Workshops 2005: 619-626
+[33] Liang Shi, Changhai Nie, Baowen Xu: A Software Debugging Method Based on Pairwise Testing. International Conference on Computational Science (3) 2005: 1088-1091
+[34] Lei Xu, Baowen Xu, Changhai Nie, Huowang Chen, Hongji Yang: A Browser Compatibility Testing Method Based on Combinatorial Testing. ICWE 2003: 310-313
+[35] 聂长海,徐宝文,史亮. 一种基于组合测试的软件故障诊断方法. 东南大学学报(自然科学版) 2003/06
+[36] 聂长海,徐宝文. 软件配置测试的测试数据生成(英文) Journal of Southeast University(English Edition) 2004/01
+[37] 屈波,徐宝文,聂长海,王子元. 一种并行环境下测试用例优先级技术度量方法. 东南大学学报(自然科学版) 2009/06  pp1104-1108
+[38] 屈波 聂长海 徐宝文. 回归测试中测试用例优先级技术研究综述. 计算机科学与探索, 2009, (03): 225-233
+[39] 张德平,聂长海,徐宝文. 测试资源受约束的安全关键软件加速测试方法. 计算机科学, 2009, 36 (05): 138-141
+[40] 屈波,徐宝文,聂长海. 补充生成测试用例的优先级设定与动态调整算法. 山东大学学报(工学版) 2009/02
+[41] 董国伟,徐宝文,陈林,聂长海,王璐璐. 蜕变测试技术综述. 计算机科学与探索, 2009, (02): pp 130-143
+[42] 董国伟,徐宝文,陈林,聂长海,王璐璐. 使用复合蜕变关系进行软件测试的实例研究(英文). Journal of Southeast University(English Edition) 2008/04 pp437-443
+[43] 王子元,徐宝文,聂长海. 组合测试用例生成技术. 计算机科学与探索, 2008, (06): 571-589 
+[44] 谢晓园,许蕾,徐宝文,聂长海,史亮. 演化测试技术的研究. 计算机科学与探索, 2008, (05):  449-466
+[45] 章晓芳,陈林,徐宝文,聂长海. 测试用例集约简问题研究及其进展. 计算机科学与探索, 2008, (03):  pp 235-247
+[46] 万晓民,张德平,聂长海,徐宝文. 统计测试中操作剖面的一种优化设计方法. 东南大学学报(自然科学版) 2008/02  pp233-238
+[47] 梁陈良,聂长海,徐宝文,陈振宇. 一种基于模型检验的类测试用例生成方法. 东南大学学报(自然科学版) 2007/05:776-781
+[48] 张德平,聂长海,徐宝文. 划分测试中测试用例最优分配问题研究, 南京大学学报(自然科学版) 2005/05
+[49] 解凯,徐宝文,聂长海,史亮,章晓芳. 基于CTAM模型的组件系统回归测试方法(英文). Journal of Southeast University(English Edition) 2005/03
+[50] 周晓宇,聂长海,徐宝文,陈火旺. 两两组合覆盖测试数据自动生成集成工具的设计与实现. 计算机科学, 2005, 32 (01): 118-120
