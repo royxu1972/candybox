@@ -3,6 +3,9 @@
 
 import pymysql
 
+'''
+export paper lsit from mysql database
+'''
 class paper:
 
     def __init__(self):
@@ -12,14 +15,13 @@ class paper:
     def __del__(self):
         self.conn.close()
 
+    # get first author list
     def get_first_author(self):
-        self.result.execute("SELECT author FROM list order by author")
+        self.result.execute("SELECT author FROM listauthor order by author")
         author_list = []
         for each in self.result:
             a = str(each[0]).split(',')
-
-            if( a[0] not in author_list ):
-                author_list.append( a[0] )
+            author_list.append( a[0] )
 
         # output
         with open("out\\author_list.txt", 'w') as wfile:
@@ -27,7 +29,7 @@ class paper:
                 wfile.writelines(each + "\n")
 
 
-    # export plain paper list from mysql
+    # get plain paper list and field list
     def get_paper(self):
         generation = ""
         application = ""
@@ -121,7 +123,3 @@ class paper:
 
             oracle = oracle.encode('UTF-8')
             wfile.writelines("oracle: " + oracle.decode('gbk') + "\n")
-
-#
-p = paper()
-p.get_first_author()

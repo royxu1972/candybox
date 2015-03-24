@@ -1,4 +1,12 @@
 # coding=utf-8
+
+from export import paper
+
+# do export
+p = paper()
+p.get_first_author()
+
+'''
 import os
 
 path = "C:\\Users\\Huayao\\Desktop\\All"
@@ -10,3 +18,4 @@ for root, dir, list in os.walk(path):
     	
     	print(name)
     	os.rename(path+"\\"+i, path+"\\"+name)
+'''
