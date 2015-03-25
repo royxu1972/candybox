@@ -12,7 +12,6 @@
 #################
 ## General
 #################
-PyRepository/out/*
+PyRepository/*.txt
 PyLog/logs/*
-PyLog/out/*
-.txt
+PyLog/*.txt
