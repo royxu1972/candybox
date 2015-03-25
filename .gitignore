@@ -1,7 +1,6 @@
 #################
 ## IDEA
 #################
-PyRepository/out/*
 *.idea
 
 #################
@@ -9,3 +8,11 @@ PyRepository/out/*
 #################
 *.sublime-project
 *.sublime-workspace
+
+#################
+## General
+#################
+PyRepository/out/*
+PyLog/logs/*
+PyLog/out/*
+.txt
