@@ -5,8 +5,8 @@ import sys
 import IP
 
 class log:
-    _fw1 = open("out\\visit.txt", 'w')
-    _fw2 = open("out\\address.txt", 'w', encoding="utf-8")
+    _fw1 = open("visit.txt", 'w')
+    _fw2 = open("address.txt", 'w', encoding="utf-8")
 
     def __init__(self):
         self._fw1.write("date         uv   pv-index" + "\n" )
@@ -103,6 +103,6 @@ class log:
 
 
 if __name__=='__main__':
-    print(sys.getdefaultencoding())
+    #print(sys.getdefaultencoding())
     l = log()
     l.parse_tomcat_log("logs")
