@@ -1,6 +1,4 @@
-from BasicPlot import BPlot
-from Exp2Plot import E2Plot
-from Exp1Plot import E1Plot
+from Exp1 import E1Plot
 
 filename1 = "D:\\Workspace\\CombinatorialDesign\\result\\CA(2,6,2).data"
 filename2 = "D:\\Workspace\\CombinatorialDesign\\result\\data-box"

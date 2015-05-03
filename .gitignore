@@ -4,15 +4,8 @@
 *.idea
 
 #################
-## Sublime
+## General Python
 #################
-*.sublime-project
-*.sublime-workspace
-
-#################
-## General
-#################
-PyRepository/*.txt
-PyLog/logs/*
-PyLog/*.txt
-PyLog/*.bat
+*.txt
+*.bib
+__pycache__/

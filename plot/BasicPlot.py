@@ -5,16 +5,31 @@ font_normal = {'family': 'Arial', 'size': 16}
 line_style = ["kv-", "ko-", "ks-", "kd-", "k+-", "kv--", "ko--", "ks--", "kd--", "k+--"]
 
 class Data:
-    '''
-    line plot data[legend][data]
-    '''
-    def __init__(self, title, xlabel, ylabel, xsticks, data, legend):
+
+    def __init__(self, title, xLabel, yLabel, xSticks, data, legend):
+        '''
+        INPUT REQUIRED:
+            title (String): title of figure
+            xLabel (String): label of x-axis
+            yLabel (String): label of y-axis
+            xSticks (['x1', 'x2', ...]): x-sticks
+            data ([d1, d2, ...])
+            legend (['lg1', 'lg2', ...])
+        '''
         self.title = title
-        self.xlabel = xlabel
-        self.ylabel = ylabel
-        self.xsticks = xsticks
+        self.xLabel = xLabel
+        self.yLabel = yLabel
+        self.xSticks = xSticks
         self.data = data
         self.legend = legend
+
+    def print(self):
+        print("Title: " + self.title)
+        print("xLabel: " + self.xLabel)
+        print("yLabel: " + self.yLabel)
+        print(self.xSticks)
+        print(self.data)
+        print(self.legend)
 
 
 class BPlot:
@@ -26,11 +41,11 @@ class BPlot:
                      markerfacecolor='none', ms=6.5, mew=2.5,
                      linewidth=1.5)
 
-        plt.xlabel(Data.xlabel, fontdict=font_normal)
-        plt.ylabel(Data.ylabel, fontdict=font_normal)
-        # plt.title(title, fontdict=font_large)
-        x = [k for k in range(0, len(Data.xsticks))]
-        plt.xticks(x, Data.xsticks)
+        plt.xlabel(Data.xLabel, fontdict=font_normal)
+        plt.ylabel(Data.yLabel, fontdict=font_normal)
+        plt.title(Data.title, fontdict=font_large)
+        x = [k for k in range(0, len(Data.xSticks))]
+        plt.xticks(x, Data.xSticks)
         plt.legend(loc='best', numpoints=1, fancybox=True)
         plt.tight_layout()
         plt.show()
@@ -43,7 +58,7 @@ class BPlot:
         index = 0
         for i in range(0, row):
             for j in range(0, column):
-                axes[i, j].boxplot(Datas[index].data, labels=Datas[0].xsticks,
+                axes[i, j].boxplot(Datas[index].data, labels=Datas[0].xSticks,
                                    showmeans=True, meanline=True)
                 axes[i, j].set_title(Datas[index].title)
                 index = index + 1
