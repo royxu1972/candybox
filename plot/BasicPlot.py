@@ -34,7 +34,9 @@ class Data:
 
 class BPlot:
     # do a single line plot
-    def line(self, Data):
+    def line(self, Data, Type):
+        # Type == "show"
+        # Type == "save", then save figure to file
         plt.figure(figsize=(14, 8))
         for index in range(0, len(Data.data)):
             plt.plot(Data.data[index], line_style[index], label=Data.legend[index],
@@ -48,7 +50,12 @@ class BPlot:
         plt.xticks(x, Data.xSticks)
         plt.legend(loc='best', numpoints=1, fancybox=True)
         plt.tight_layout()
-        plt.show()
+        # show or save
+        if( Type == "show"):
+            plt.show()
+        elif( Type == "save" ):
+            plt.savefig("figs//" + Data.title + ".png")
+        plt.close()
 
     # do multiple box plot
     def boxes(self, Datas, column):

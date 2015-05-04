@@ -9,3 +9,4 @@
 *.txt
 *.bib
 __pycache__/
+data/
