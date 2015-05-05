@@ -54,7 +54,7 @@ class BPlot:
         if( Type == "show"):
             plt.show()
         elif( Type == "save" ):
-            plt.savefig("figs//" + Data.title + ".png")
+            plt.savefig("data//" + Data.title + ".png")
         plt.close()
 
     # do multiple box plot

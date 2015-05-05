@@ -72,6 +72,6 @@ class E1Plot:
 
 if __name__=='__main__':
     mp = E1Plot()
-    mp.readFile("0504.txt")
+    mp.readFile("data.txt")
     mp.linePlot("save")
 
