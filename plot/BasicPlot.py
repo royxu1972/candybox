@@ -1,4 +1,7 @@
+import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
+from pandas.tools.plotting import parallel_coordinates
 
 font_large = {'family': 'Arial', 'size': 20}
 font_normal = {'family': 'Arial', 'size': 16}
@@ -30,6 +33,30 @@ class Data:
         print(self.xSticks)
         print(self.data)
         print(self.legend)
+
+
+class APlot:
+    def parallel(self, Matrix, Label):
+        # convert Data to numpy array
+        arr = np.array(Matrix)
+        data = pd.DataFrame(arr, columns=Label)
+        print(data)
+        data.info()
+
+        f = open('poly.csv','w')
+        f.write(','.join(Label) + '\n')
+        for i in range(0, len(Matrix)):
+            f.write(str(Matrix[i][0]))
+            for j in range(1, len(Matrix[i])):
+                f.write(','+str(Matrix[i][j]))
+            f.write('\n')
+        f.close()
+
+        data = pd.read_csv('poly.csv')
+        print(type(data))
+        plt.figure()
+        parallel_coordinates(data, 'Name')
+        plt.show()
 
 
 class BPlot:

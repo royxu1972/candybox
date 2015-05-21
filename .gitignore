@@ -8,5 +8,6 @@
 #################
 *.txt
 *.bib
+*.csv
 __pycache__/
 data/

@@ -1,5 +1,5 @@
 import functions as fc
-import BasicPlot as bp
+import basicPlot as bp
 
 class EData:
     def __init__(self, name, data):
