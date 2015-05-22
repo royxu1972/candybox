@@ -36,7 +36,14 @@ class Data:
 
 
 class APlot:
-    def parallel(self, Matrix, Label):
+    # plot Parallel coordinates from data in file [name]
+    def parallel(self, name, label):
+        data = pd.read_csv( name )
+        plt.figure()
+        parallel_coordinates(data, label)
+        plt.show()
+
+    def parallel_1(self, Matrix, Label):
         # convert Data to numpy array
         arr = np.array(Matrix)
         data = pd.DataFrame(arr, columns=Label)
@@ -46,10 +53,11 @@ class APlot:
         f = open('poly.csv','w')
         f.write(','.join(Label) + '\n')
         for i in range(0, len(Matrix)):
-            f.write(str(Matrix[i][0]))
-            for j in range(1, len(Matrix[i])):
-                f.write(','+str(Matrix[i][j]))
-            f.write('\n')
+            if( Matrix[i][len(Matrix[i])-1] == "coverage" ):
+                f.write(str(Matrix[i][0]))
+                for j in range(1, len(Matrix[i])):
+                    f.write(','+str(Matrix[i][j]))
+                f.write('\n')
         f.close()
 
         data = pd.read_csv('poly.csv')
