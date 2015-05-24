@@ -36,12 +36,32 @@ class Data:
 
 
 class APlot:
-    # plot Parallel coordinates from data in file [name]
-    def parallel(self, name, label):
-        data = pd.read_csv( name )
-        plt.figure()
-        parallel_coordinates(data, label)
-        plt.show()
+    # plot parallel coordinate
+    # INPUT: name.csv -- data file
+    #        label    -- the name of label column
+    #        unique   -- only show single data
+    def parallel(self, name, label, unique=""):
+        if( unique == "" ):
+            data = pd.read_csv( name + '.csv' )
+            plt.figure()
+            parallel_coordinates(data, label)
+            plt.show()
+        # reformat data
+        else:
+            return
+            '''
+            f = open(name + '.csv', 'w')
+            f.write(','.join(Label) + '\n')
+            for i in range(0, len(Matrix)):
+                if( Matrix[i][len(Matrix[i])-1] == "coverage" ):
+                    f.write(str(Matrix[i][0]))
+                    for j in range(1, len(Matrix[i])):
+                        f.write(','+str(Matrix[i][j]))
+                        f.write('\n')
+            f.close()
+            '''
+
+
 
     def parallel_1(self, Matrix, Label):
         # convert Data to numpy array

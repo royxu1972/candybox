@@ -1,6 +1,5 @@
 import basicPlot as bp
 import functions as func
-from random import uniform
 
 '''
 prioritization plot
@@ -9,26 +8,11 @@ class E1Plot:
 
     def __init__(self):
         self.DataSet = []
-        self.Matrix = []
-        self.MatrixLabel = ['P', 'V', 'T', 'Type', 'R', 'Name']
 
-    # read data from source file
+    # read data from source file for line plot
     def readFile(self, filename):
-        dictP = { 10:0.0, 20:0.5, 30:1.0, 40:1.5, 60:2.0 }
-        dictV = { 2:0.0,  3:0.5,  4:1.0,  6:1.5,  8:2.0 }
-        p_init = [0.00095, 0.40095, 0.80095, 1.20095, 1.60095]
-        t_init = [0.00095, 1.00095]
-        #dictP = { 4:0.0, 6:1.0, 10:2.0 }
-        #dictV = { 2:0.0, 3:1.0, 4:2.0  }
-        dictT = { 2:0.5,  3:1.5 }
-        dictType = { 1:0.5,  2:1.5 }
-
         f = open(filename, 'r')
         name = f.readline().strip()
-        name = name[name.index('=')+1:]
-        imT = int(name[:name.index(',')])
-        imType = int(name[name.index('=')+1:])
-        #print( "t = %d, type = %d" %(imT, imType) )
 
         line = f.readline()
         while( line ):
@@ -39,12 +23,6 @@ class E1Plot:
                 continue
             # this is data part
             elif( line.startswith('-') ):
-                # get P and V
-                name = f.readline().strip()     # p = 10 , v = 3
-                imP = int(name[3:name.index(',')])
-                imV = int(name[name.index(',')+5:])
-                #print( "p = %d, v = %d" %(imP, imV) )
-
                 # skip one line
                 f.readline()
 
@@ -67,67 +45,6 @@ class E1Plot:
                         items.append(func.String2FloatList(line[line.index(':')+2:]))
                     # next one
                     line = f.readline().strip()
-
-                #
-                # MATRIX
-                # determine the top rank, the smaller value the better
-                #
-                for j in range(0, len(ratio)):
-                    value = items[0][j]
-                    rank = labels[0]
-                    for i in range(1, len(items)):
-                        if( items[i][j] < value ):
-                            value = items[i][j]
-                            rank = labels[i]
-                    imR = ratio[j]
-                    imRank = rank
-                    #print("ratio = %f, rank = %s" %(imR, imRank) )
-                    '''
-                    if( imP == 10 ):
-                        dictP_imP = p_init[0]
-                        p_init[0] += 0.00095
-                    elif( imP == 20 ):
-                        dictP_imP = p_init[1]
-                        p_init[1] += 0.00095
-                    elif( imP == 30 ):
-                        dictP_imP = p_init[2]
-                        p_init[2] += 0.00095
-                    elif( imP == 40 ):
-                        dictP_imP = p_init[3]
-                        p_init[3] += 0.00095
-                    else:
-                        dictP_imP = p_init[4]
-                        p_init[4] += 0.00095
-                    '''
-
-                    if( imP == 10 ):
-                        dictP_imP = uniform(0.0, 0.3)
-                    elif( imP == 20 ):
-                        dictP_imP = uniform(0.4, 0.7)
-                    elif( imP == 30 ):
-                        dictP_imP = uniform(0.8, 1.1)
-                    elif( imP == 40 ):
-                        dictP_imP = uniform(1.2, 1.5)
-                    else:
-                        dictP_imP = uniform(1.6, 1.9)
-
-                    if( imType == 1 ):
-                        dictT_imType = uniform(0.0, 0.9)
-                    else:
-                        dictT_imType = uniform(1.0, 1.9)
-
-                    if( imV == 2 ):
-                        dictP_imV = uniform(0.0, 0.3)
-                    elif( imV == 3 ):
-                        dictP_imV = uniform(0.4, 0.7)
-                    elif( imV == 4 ):
-                        dictP_imV = uniform(0.8, 1.1)
-                    elif( imV == 6 ):
-                        dictP_imV = uniform(1.2, 1.5)
-                    else:
-                        dictP_imV = uniform(1.6, 1.9)
-
-                    self.Matrix.append([dictP_imP, dictP_imV, dictT[imT], dictT_imType, imR, imRank])
 
                 # item[k] / items[0] (random based)
                 random = list(items[0])
@@ -154,8 +71,50 @@ class E1Plot:
         else:
             print("invalid index value")
 
+
+    # normalize data file for parallel plot
+    # INPUT:  name.txt
+    # OUTPUT: name.csv
+    def normalFile(self, name):
+        p_upper = 60
+        p_lower = 10
+        v_upper = 8
+        v_lower = 2
+        r_upper = 2.0
+        r_lower = 0.0
+        t_dit = { 2: 0.33, 3: 0.66 }
+        type_dit = { 1: 0.33, 2: 0.66}
+
+        # read file
+        f = open(name + '.txt', 'r')
+        first = ','.join(f.readline().split(','))
+        allLines = []
+        line = f.readline()
+        while( line ):
+            nums = line.split(',')
+            for i in range(0, len(nums)):
+                nums[i] = nums[i].strip()
+            nums[0] = str((float(nums[0]) - p_lower) / (p_upper-p_lower)) # p
+            nums[1] = str((float(nums[1]) - v_lower) / (v_upper-v_lower)) # v
+            nums[2] = str(t_dit[nums[2]]) # t
+            nums[3] = str(type_dit[nums[3]]) # type
+            nums[4] = str((float(nums[4]) - r_lower) / (r_upper-r_lower)) # r
+
+            allLines.append( ','.join(nums) )
+            line = f.readline()
+
+        # write to output file
+        fw = open(name + ".csv", 'w')
+        fw.write(first + '\n')
+        for each in allLines:
+            fw.write(each + '\n')
+        fw.close()
+
     # show parallel_coordinates plot
-    def parallelPlot(self, name, label):
+    # INPUT: name.csv -- data file
+    #        label    -- the name of label column
+    #
+    def parallelPlot(self, name, label, ):
         plot = bp.APlot()
         plot.parallel(name, label)
 
@@ -164,5 +123,6 @@ if __name__=='__main__':
     mp = E1Plot()
     #mp.readFile("data1.txt")
     #mp.readFile("data.txt")
-    mp.parallelPlot("poly.csv", "Top")
+    #mp.normalFile("1000.csv")
+    mp.parallelPlot("2-way.samples.1000", "Top")
     #mp.linePlot("save")
