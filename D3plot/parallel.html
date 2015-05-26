@@ -62,17 +62,17 @@
     </style>
 </head>
 <body>
-<!--h2>
+<h2>
     Edgar Anderson’s <i>Iris</i> data set<br>
     parallel coordinates
-</h2-->
+</h2>
 <script type="text/javascript" src="d3/d3.js"></script>
 <script type="text/javascript" src="d3/d3.csv.js"></script>
 <script type="text/javascript">
 
     var species = ["hybrid", "coverage", "switch-lkh"];
-    var unique = "coverage";
-    var traits = ["P", "V", "Type", "R"];
+    var unique = "switch-lkh";
+    var traits = ["the number of parameter", "the number of value", "type", "ratio"];
 
     var m = [80, 160, 200, 160],
             w = 1280 - m[1] - m[3],
@@ -202,7 +202,8 @@
             });
         });
     }
-
 </script>
+
+
 </body>
 </html>

@@ -9,6 +9,42 @@ class E1Plot:
     def __init__(self):
         self.DataSet = []
 
+    # read data from filename, and then do line plot
+    # file example:
+    # parameter: 10 20 ...
+    # random: 128.33 128.33 ...
+    # coverage: 119.17 119.17 ...
+    # switch-lkh: 113.479 113.479 ...
+    # hybrid: 107.96 107.96 ...
+    def plotLine(self, filename):
+        # read data
+        f = open(filename, 'r')
+        line = f.readline().strip()
+        xLabel = line[:line.index(':')]
+        xSticks = func.String2StringList(line[line.index(':')+2:])
+        data = []
+        legend = []
+
+        line = f.readline()
+        while( line ):
+            line = line.strip()
+            legend.append(line[:line.index(':')])
+            d = line[line.index(':')+2:]
+            data.append(func.String2FloatList(d))
+            line = f.readline()
+
+        # format data to random based
+        # data[i][j] = data[0][j] (random) / data[i][j]
+        random = list(data[0])
+        for i in range(0, len(data)):
+            for j in range(0, len(data[i])):
+                data[i][j] = random[j] / data[i][j]
+
+        # plot
+        dp = bp.Data("", xLabel, 'ft-value', xSticks, data, legend)
+        bp.BPlot().line(dp,"show")
+
+
     # read data from source file for line plot
     def readFile(self, filename):
         f = open(filename, 'r')
@@ -124,5 +160,7 @@ if __name__=='__main__':
     #mp.readFile("data1.txt")
     #mp.readFile("data.txt")
     #mp.normalFile("1000.csv")
-    mp.parallelPlot("2-way.samples.1000", "Top")
+    #mp.parallelPlot("2-way.samples.1000", "Top")
     #mp.linePlot("save")
+
+    mp.plotLine("each//value")
