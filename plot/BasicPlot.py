@@ -42,9 +42,27 @@ class APlot:
     def parallel(self, name, label, unique=""):
         if( unique == "" ):
             data = pd.read_csv( name + '.csv' )
+
+            hybrid = 0
+            switch = 0
+            coverage = 0
+            for i in range(0, 1000):
+                ll = data.values[i][0]
+                if( ll == "hybrid" ):
+                    hybrid += 1
+                elif( ll == "switch-lkh" ):
+                    switch += 1
+                elif( ll == "coverage" ):
+                    coverage += 1
+                else:
+                    print("error")
+                    return
+            print("hybrid = %d, switch = %d, coverage = %d" % (hybrid, switch, coverage))
+
             plt.figure()
             parallel_coordinates(data, label)
             plt.show()
+
         # reformat data
         else:
             return

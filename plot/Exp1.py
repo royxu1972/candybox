@@ -160,7 +160,6 @@ if __name__=='__main__':
     #mp.readFile("data1.txt")
     #mp.readFile("data.txt")
     #mp.normalFile("1000.csv")
-    #mp.parallelPlot("2-way.samples.1000", "Top")
+    mp.parallelPlot("2", "Top")
     #mp.linePlot("save")
-
-    mp.plotLine("each//value")
+    #mp.plotLine("each//parameter")
