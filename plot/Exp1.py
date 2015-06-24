@@ -1,4 +1,4 @@
-import basicPlot as bp
+import baseplot as bp
 import functions as func
 
 '''
@@ -160,6 +160,6 @@ if __name__=='__main__':
     #mp.readFile("data1.txt")
     #mp.readFile("data.txt")
     #mp.normalFile("1000.csv")
-    mp.parallelPlot("2", "Top")
+    #mp.parallelPlot("2", "Top")
     #mp.linePlot("save")
     #mp.plotLine("each//parameter")
