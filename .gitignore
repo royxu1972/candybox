@@ -8,6 +8,7 @@
 #################
 *.txt
 *.log
+*.json
 *.bib
 *.csv
 __pycache__/

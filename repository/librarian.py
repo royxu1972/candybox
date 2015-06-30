@@ -1,36 +1,39 @@
-#!
-# coding: UTF-8
-
+import json
 import pymysql
 
-'''
-export paper lsit from mysql database
-'''
-class paper:
-
+class librarian:
     def __init__(self):
-        self.conn = pymysql.connect(host='localhost', port=3306, user='root', passwd='123456', db='paper')
+        d = json.load(fp=open("db.json"))
+        host = d["db"][0]["host"]
+        user = d["db"][0]["user"]
+        table = d["db"][0]["table"]
+        passwd = d["db"][0]["passwd"]
+        # connect
+        self.conn = pymysql.connect(host=host, port=3306, user=user, passwd=passwd, db=table)
         self.result = self.conn.cursor()
 
     def __del__(self):
         self.conn.close()
 
-    # get first author list
     def get_first_author(self):
+        """
+        get first author list
+        """
         self.result.execute("SELECT author FROM listauthor order by author")
+
         author_list = []
         for each in self.result:
             a = str(each[0]).split(',')
             author_list.append( a[0] )
 
-        # output
-        with open("out\\author_list.txt", 'w') as wfile:
+        with open("author_list.txt", 'w') as wfile:
             for each in author_list:
                 wfile.writelines(each + "\n")
 
-
-    # get plain paper list and field list
-    def get_paper(self):
+    def get_paper_list(self):
+        """
+        get plain paper list and field category
+        """
         generation = ""
         application = ""
         model = ""
@@ -43,7 +46,7 @@ class paper:
         self.result.execute("SELECT * FROM list order by year DESC")
 
         index = 1
-        with open("out\\paper_list.txt", 'w') as wfile:
+        with open("paper_list.txt", 'w') as wf:
             for r in self.result:
                 # [index] + author + title  + "in" + publication
                 content = "[" + str(index) + "] " + str(r[4]) + ", " + str(r[5]) + ", in " + str(r[6])
@@ -69,7 +72,7 @@ class paper:
                 # 将unicode编码转换成其他编码的字符串
                 con = content.encode('utf-8')
                 # decode的作用是将其他编码的字符串转换成unicode编码，
-                wfile.writelines(con.decode('gbk') + "\n")
+                wf.writelines(con.decode('gbk') + "\n")
 
                 # deal with the field
                 if ( str(r[11]) == "Generation" ):
@@ -96,51 +99,39 @@ class paper:
         self.result.close()
 
         # write field file
-        with open("out\\field.txt", 'w') as wfile:
+        with open("field.txt", 'w') as wf:
             generation = generation.encode('UTF-8')
-            wfile.writelines("generation: " + generation.decode('gbk') + "\n")
+            wf.writelines("generation: " + generation.decode('gbk') + "\n")
 
             application = application.encode('UTF-8')
-            wfile.writelines("application: " + application.decode('gbk') + "\n")
+            wf.writelines("application: " + application.decode('gbk') + "\n")
 
             model = model.encode('UTF-8')
-            wfile.writelines("model: " + model.decode('gbk') + "\n")
+            wf.writelines("model: " + model.decode('gbk') + "\n")
 
             evaluation = evaluation.encode('UTF-8')
-            wfile.writelines("evaluation: " + evaluation.decode('gbk') + "\n")
+            wf.writelines("evaluation: " + evaluation.decode('gbk') + "\n")
 
             constraint = constraint.encode('UTF-8')
-            wfile.writelines("constraint: " + constraint.decode('gbk') + "\n")
+            wf.writelines("constraint: " + constraint.decode('gbk') + "\n")
 
             prioritization = prioritization.encode('UTF-8')
-            wfile.writelines("prioritization: " + prioritization.decode('gbk') + "\n")
+            wf.writelines("prioritization: " + prioritization.decode('gbk') + "\n")
 
             diagnosis = diagnosis.encode('UTF-8')
-            wfile.writelines("diagnosis: " + diagnosis.decode('gbk') + "\n")
+            wf.writelines("diagnosis: " + diagnosis.decode('gbk') + "\n")
 
             survey = survey.encode('UTF-8')
-            wfile.writelines("survey: " + survey.decode('gbk') + "\n")
+            wf.writelines("survey: " + survey.decode('gbk') + "\n")
 
             oracle = oracle.encode('UTF-8')
-            wfile.writelines("oracle: " + oracle.decode('gbk') + "\n")
-
+            wf.writelines("oracle: " + oracle.decode('gbk') + "\n")
 
 
 if __name__=='__main__':
-    # do export
-    p = paper()
-    p.get_first_author()
+    l = librarian()
+    l.get_paper_list()
 
-'''
-import os
 
-path = "C:\\Users\\Huayao\\Desktop\\All"
-for root, dir, list in os.walk(path):
-	# root遍历路径，dirs当前遍历路径下的目录，list当前遍历目录下的文件名
-    for i in list:
-    	pos = i.index('.')
-    	name = i[pos+1:]
 
-    	print(name)
-    	os.rename(path+"\\"+i, path+"\\"+name)
-'''
+
