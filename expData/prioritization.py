@@ -1,80 +1,56 @@
+import Item as I
 import numpy as np
-import operator
 
 class Prioritization:
+    orders = ["random", "coverage", "switch-greedy", "switch-GA", "switch-LKH", "Hybrid", "NSGA-II"]
+    metrics = ["Cost", "RFD", "EPSILON", "IGD", "Ft-measure"]
 
-    def readfile(self, filename):
-        f = open(filename, 'r')
-        lines = f.readlines()
+    def __init__(self):
+        self.statsAll = {}
+        for m in self.metrics:
+            self.statsAll[m] = np.zeros(shape=(21,3))   # + / = / -
 
-        # get the # of orders
-        l1 = lines[0]
-        orders = l1[l1.find("orders =")+9:].split()
-        length_orders = len(orders)
+        self.statsName = []
+        for i in range(6,-1,-1):
+            for j in range(i-1,-1,-1):
+                self.statsName.append( self.orders[i] + " VS " + self.orders[j] )
 
-        # compute the index of each sub data set
-        start = [2]
-        for x in range(0, 4):
-            tp = start[x] + length_orders + 2
-            start.append(tp)
-
-        # read data
-        # Cost, RFD, EPSILON, IGD, Ft-measure
-        data = []
-        # [
-        #   {"alg1":[values], "alg2":[values]},
-        #   {}, ...
-        # ]
-        for x in start:
-            each = {}
-            for y in range(0, length_orders):
-                l2 = lines[x+1+y].strip()
-                l2 = l2[l2.find(":")+3:len(l2)-1]
-                l2 = l2.split(", ")
-                each[orders[y]] = np.array(l2, np.float)
-            data.append(each)
-
-        #for each in data:
-        #    for od in orders:
-        #        print( od + ": " + str(each[od]) )
-
-        # compute the average data
-        data_mean = []
-        # for each measures
-        for i in range(0, 5):
-            each = {}
-            # for each approach
-            for alg in orders:
-                tp = data[i][alg].mean()
-                each[alg] = tp
-            data_mean.append(each)
-
-        #for each in data_mean:
-        #    print(each)
-
-        # determine the best order based on mean value of each metric
-        orders_best = []
-        # Cost, RFD, EPSILON, IGD, Ft-measure
-        orders_best.append(min(data_mean[0].items(), key=operator.itemgetter(1))[0])
-        orders_best.append(max(data_mean[1].items(), key=operator.itemgetter(1))[0])
-        orders_best.append(min(data_mean[2].items(), key=operator.itemgetter(1))[0])
-        orders_best.append(min(data_mean[3].items(), key=operator.itemgetter(1))[0])
-        orders_best.append(min(data_mean[4].items(), key=operator.itemgetter(1))[0])
-        print("best alg: " + str(orders_best))
-
-        # statistics test
-        Wilcoxon = []
-        #       alg1  alg2
-        # alg1   -     1
-        # alg2   0     -
-        # where Wilcoxon[i][j] = 1 means that the mean value of approach i
-        # is significantly better than that of j
+    def printStats(self):
+        print("###### Stats ######")
+        for m in self.metrics:
+            print( "# " + m )
+            print("  + / = / -")
+            tp = self.statsAll[m]
+            for i in range(0, len(tp)):
+                print( str(tp[i]) + "\t" + self.statsName[i] )
 
 
+    def scanFiles(self, begin, end):
+        for index in range(begin,end+1):
+            item = I.Item()
+            item.readfile( "data//" + str(index) + ".txt" )
 
+            for m in self.metrics:
+                tp = item.StatisticArray[m]
+                tpSum = np.zeros(shape=(21,3))  # + / = / -
+                for i in range(0, len(tp)):
+                    if  tp[i] == "+":
+                        tpSum[i][0] += 1
+                    elif tp[i] == "=":
+                        tpSum[i][1] += 1
+                    elif tp[i] == "-":
+                        tpSum[i][2] += 1
+                    else:
+                        print("ERROR MAIN")
+
+                self.statsAll[m] = self.statsAll[m] + tpSum
 
 
 if __name__=='__main__':
-    p = Prioritization()
-    p.readfile("data//0.txt")
+    #p = I.Item()
+    #p.readfile("data//5.txt")
+    #p.print()
+    exp1 = Prioritization()
+    exp1.scanFiles(0,58)
+    exp1.printStats()
 
