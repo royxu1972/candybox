@@ -2,7 +2,6 @@ from Stats import Stats
 from Case import Case
 import numpy as np
 import matplotlib.pyplot as plt
-import pandas as pd
 
 orders = ["random", "coverage", "switch-greedy", "switch-GA", "switch-LKH", "Hybrid", "NSGA-II"]
 
@@ -84,7 +83,7 @@ class Exp:
             self.box_IGD[index] = case.IGD_Mean
             self.box_Ft[index] = case.Ft_Mean
 
-    def boxplot(self, name):
+    def boxPlot(self, name):
         sel = { "Cost"    : self.box_Cost,
                 "RFD"     : self.box_RFD,
                 "EPSILON" : self.box_EPSILON,
@@ -104,9 +103,7 @@ class Exp:
 if __name__=='__main__':
     exp = Exp(0, 10)
     #exp.printMeanBox()
-    exp.boxplot("Cost")
-
-
+    exp.boxPlot("Cost")
 
     #k = Case("0", orders, "data//0.txt")
     #print(k)
