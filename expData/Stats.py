@@ -14,6 +14,9 @@ class Stats:
         self.Wilcox_IGD = self.statsUpdarte(case.IGD, operator.le)
         self.Wilcox_Ft = self.statsUpdarte(case.Ft, operator.le)
 
+        # the best order in term of Ft
+        self.bestFtOrder = self.updateBestFt()
+
         # the name list of alg(A) Vs. alg(B)
         self.statsName = []
         for i in range(6, -1, -1):
@@ -105,3 +108,19 @@ class Stats:
                     print("ERROR in updateTable")
                 index += 1
         return tb
+
+    def updateBestFt(self):
+        """
+        :return:
+            best = i (if order i significantly outperforms all others in term of Ft) or none
+        """
+        LENGTH = len(self.Wilcox_Ft)
+        best = None
+        for i in range(0, LENGTH):
+            sum = 0
+            for j in range(0, LENGTH):
+                if self.Wilcox_Ft[i][j] == '+':
+                    sum += 1
+            if sum == LENGTH - 1:
+                best = self.case.orders[i]
+        return best

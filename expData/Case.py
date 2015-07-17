@@ -9,7 +9,7 @@ class Case:
         # read data
         data = self.readFromFile(file)
 
-        # data, ndarray with size |orders| * 30 array
+        # data, ndarray, size as |orders| * 30 array
         self.Cost = data[0]
         self.RFD = data[1]
         self.EPSILON = data[2]
@@ -23,6 +23,9 @@ class Case:
         self.EPSILON_Mean = norm( np.mean(self.EPSILON, axis=1) )
         self.IGD_Mean = norm( np.mean(self.IGD, axis=1) )
         self.Ft_Mean = norm( np.mean(self.Ft, axis=1) )
+
+        # the best one
+        self.bestFtOrder = self.orders[np.argmin(self.Ft_Mean)]
 
     def __str__(self):
         str = "# " + self.name
@@ -68,13 +71,3 @@ class Case:
             data.append(each)
 
         return data
-
-
-
-
-
-
-
-
-
-

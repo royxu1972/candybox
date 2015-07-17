@@ -3,7 +3,7 @@ from Case import Case
 import numpy as np
 import matplotlib.pyplot as plt
 
-orders = ["random", "coverage", "switch-greedy", "switch-GA", "switch-LKH", "Hybrid", "NSGA-II"]
+ORDERS = ["random", "coverage", "switch-greedy", "switch-GA", "switch-LKH", "Hybrid", "NSGA-II"]
 
 class Exp:
 
@@ -19,7 +19,7 @@ class Exp:
         self.statsName = []
         for i in range(6,-1,-1):
             for j in range(i-1,-1,-1):
-                self.statsName.append( orders[i] + " Vs. " + orders[j] )
+                self.statsName.append( ORDERS[i] + " Vs. " + ORDERS[j] )
 
         # the following data is used to create box plot
         # |cases| * |orders|
@@ -29,11 +29,15 @@ class Exp:
         self.box_IGD = np.zeros(shape=(end-begin+1, 7))
         self.box_Ft = np.zeros(shape=(end-begin+1, 7))
 
+        # the best orders in term of Ft
+        self.bestMeanFt = []    # which has the minimum mean value
+        self.bestStatsFt = []   # which significantly outperforms others
+
         # scan file
         self.scanFiles(begin, end)
 
 
-    def printStats(self):
+    def writeStats(self):
         str = "# Stats Cost + / = / -\n"
         for k in range(0, 21):
             str += np.array_repr(self.exp_Cost[k]) + " " + self.statsName[k] + "\n"
@@ -49,25 +53,35 @@ class Exp:
         str += "\n# Stats Ft + / = / -\n"
         for k in range(0, 21):
             str += np.array_repr(self.exp_Ft[k]) + " " + self.statsName[k] + "\n"
-        print(str)
+        f = open('stats.data','w')
+        f.write(str)
+        f.close()
 
     def printMeanBox(self):
-        print("Cost Box")
-        print(self.box_Cost)
-        print("\nRFD Box")
-        print(self.box_RFD)
-        print("\nEPSILON Box")
-        print(self.box_EPSILON)
-        print("\nIGD Box")
-        print(self.box_IGD)
-        print("\nFt Box")
-        print(self.box_Ft)
+        print("Cost Box");print(self.box_Cost)
+        print("\nRFD Box");print(self.box_RFD)
+        print("\nEPSILON Box");print(self.box_EPSILON)
+        print("\nIGD Box");print(self.box_IGD)
+        print("\nFt Box");print(self.box_Ft)
 
+    def writeBestOrder(self):
+        f = open('order.data','w')
+        f.write("  #   [Mean Value]   [Stats Best]\n")
+        for i in range(0, len(self.bestMeanFt)):
+            so = self.bestStatsFt[i]
+            if so == None:
+                so = "None"
+            f.write('{0:>3}'.format(i) + '{0:>12}'.format(self.bestMeanFt[i]) + '{0:>14}'.format(so) + '\n')
+        f.close()
 
     def scanFiles(self, begin, end):
         for index in range(begin, end+1):
-            case = Case( index, orders, "data//" + str(index) + ".txt" )
+            case = Case( index, ORDERS, "data//" + str(index) + ".txt" )
             stats = Stats(case)
+
+            # best
+            self.bestMeanFt.append( case.bestFtOrder )
+            self.bestStatsFt.append( stats.bestFtOrder )
 
             # + / = / -
             self.exp_Cost += stats.Table_Cost
@@ -83,29 +97,32 @@ class Exp:
             self.box_IGD[index] = case.IGD_Mean
             self.box_Ft[index] = case.Ft_Mean
 
+    def boxPlots(self, names):
+        for each in names:
+            self.boxPlot(each)
+
     def boxPlot(self, name):
         sel = { "Cost"    : self.box_Cost,
                 "RFD"     : self.box_RFD,
                 "EPSILON" : self.box_EPSILON,
                 "IGD"     : self.box_IGD,
-                "Ft"      : self.box_IGD }
+                "Ft"      : self.box_Ft }
         data = sel[name]
-        plt.figure( figsize=(10, 5) )
+        fig = plt.figure( figsize=(10, 5) )
         plt.boxplot(data)
-        plt.xticks([x+1 for x in range(0, len(orders))],
-                   orders,
+        plt.xticks([x+1 for x in range(0, len(ORDERS))],
+                   ORDERS,
                    rotation=20)
         plt.ylim([-0.1,1.1])
         plt.tight_layout()
+        fig.canvas.set_window_title(name)
         plt.show()
 
 
 if __name__=='__main__':
-    exp = Exp(0, 10)
-    #exp.printMeanBox()
-    exp.boxPlot("Cost")
-
-    #k = Case("0", orders, "data//0.txt")
-    #print(k)
-    #s = Stats(k)
-    #print(s)
+    exp = Exp(0, 58)
+    #exp.boxPlot("Cost")
+    #exp.printStats()
+    exp.writeStats()
+    exp.writeBestOrder()
+    exp.boxPlots(["Cost", "RFD", "EPSILON", "IGD", "Ft"])

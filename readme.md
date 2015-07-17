@@ -1,1 +1,3 @@
-# Candy Box
+# candy box
+
+Some scripts to do some things.
