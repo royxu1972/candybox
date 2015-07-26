@@ -120,9 +120,9 @@ class Exp:
 
 
 if __name__=='__main__':
-    exp = Exp(0, 58)
+    exp = Exp(0, 399)
     #exp.boxPlot("Cost")
     #exp.printStats()
-    exp.writeStats()
-    exp.writeBestOrder()
+    #exp.writeStats()
+    #exp.writeBestOrder()
     exp.boxPlots(["Cost", "RFD", "EPSILON", "IGD", "Ft"])
