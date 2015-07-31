@@ -104,3 +104,7 @@ class BPlot:
         elif( Type == "save" ):
             plt.savefig("data//" + Data.title + ".png")
         plt.close()
+
+if __name__=='__main__':
+    a = APlot()
+    a.parallel("2","Top")

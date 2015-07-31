@@ -42,6 +42,10 @@
             stroke: #008;
         }
 
+        .NSGA {
+            stroke: #002;
+        }
+
         .brush .extent {
             fill-opacity: .3;
             stroke: #fff;
@@ -70,9 +74,11 @@
 <script type="text/javascript" src="d3/d3.csv.js"></script>
 <script type="text/javascript">
 
-    var species = ["hybrid", "coverage", "switch-lkh"];
-    var unique = "switch-lkh";
+    //var species = ["Hybrid", "NSGA-II", "switch-LKH", "Coverage"];
+    var species = ["hybrid", "NSGA", "switch-lkh", "coverage"];
+    var unique = "coverage";
     var traits = ["the number of parameter", "the number of value", "type", "ratio"];
+    //var traits = ["P", "V", "T", "Tau", "Type", "R"];
 
     var m = [80, 160, 200, 160],
             w = 1280 - m[1] - m[3],
@@ -91,7 +97,7 @@
             .append("svg:g")
             .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-    d3.csv("2.csv", function(flowers) {
+    d3.csv("cp.csv", function(flowers) {
 
         // Create a scale and brush for each trait.
         traits.forEach(function(d) {

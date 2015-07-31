@@ -2,6 +2,7 @@ from Stats import Stats
 from Case import Case
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 ORDERS = ["random", "coverage", "switch-greedy", "switch-GA", "switch-LKH", "Hybrid", "NSGA-II"]
 
@@ -12,14 +13,14 @@ class Exp:
         # + / = / -
         self.exp_Cost = np.zeros(shape=(21,3))
         self.exp_RFD = np.zeros(shape=(21,3))
-        self.exps_EPSILON = np.zeros(shape=(21,3))
+        self.exp_EPSILON = np.zeros(shape=(21,3))
         self.exp_IGD = np.zeros(shape=(21,3))
         self.exp_Ft = np.zeros(shape=(21,3))
 
         self.statsName = []
         for i in range(6,-1,-1):
             for j in range(i-1,-1,-1):
-                self.statsName.append( ORDERS[i] + " Vs. " + ORDERS[j] )
+                self.statsName.append( ORDERS[i] + " vs " + ORDERS[j] )
 
         # the following data is used to create box plot
         # |cases| * |orders|
@@ -46,7 +47,7 @@ class Exp:
             str += np.array_repr(self.exp_RFD[k]) + " " + self.statsName[k] + "\n"
         str += "\n# Stats EPSILON + / = / -\n"
         for k in range(0, 21):
-            str += np.array_repr(self.exps_EPSILON[k]) + " " + self.statsName[k] + "\n"
+            str += np.array_repr(self.exp_EPSILON[k]) + " " + self.statsName[k] + "\n"
         str += "\n# Stats IGD + / = / -\n"
         for k in range(0, 21):
             str += np.array_repr(self.exp_IGD[k]) + " " + self.statsName[k] + "\n"
@@ -56,6 +57,28 @@ class Exp:
         f = open('stats.data','w')
         f.write(str)
         f.close()
+
+    def writeStatsLatex(self):
+        ss = ""
+        for k in range(0, 21):
+            ss += self.statsName[k] + " & "
+            # RFD
+            ss += str(self.exp_RFD[k][0].astype(int)) + " / " + str(self.exp_RFD[k][1].astype(int)) + " / " + str(self.exp_RFD[k][2].astype(int))
+            ss += " & "
+            # cost
+            ss += str(self.exp_Cost[k][0].astype(int)) + " / " + str(self.exp_Cost[k][1].astype(int)) + " / " + str(self.exp_Cost[k][2].astype(int))
+            ss += " & "
+            # epsilon
+            ss += str(self.exp_EPSILON[k][0].astype(int)) + " / " + str(self.exp_EPSILON[k][1].astype(int)) + " / " + str(self.exp_EPSILON[k][2].astype(int))
+            ss += " & "
+            # igd
+            ss += str(self.exp_IGD[k][0].astype(int)) + " / " + str(self.exp_IGD[k][1].astype(int)) + " / " + str(self.exp_IGD[k][2].astype(int))
+            ss += " & "
+            # ft
+            ss += str(self.exp_Ft[k][0].astype(int)) + " / " + str(self.exp_Ft[k][1].astype(int)) + " / " + str(self.exp_Ft[k][2].astype(int))
+            ss += "\\\ \n"
+        print(ss)
+
 
     def printMeanBox(self):
         print("Cost Box");print(self.box_Cost)
@@ -86,7 +109,7 @@ class Exp:
             # + / = / -
             self.exp_Cost += stats.Table_Cost
             self.exp_RFD += stats.Table_RFD
-            self.exps_EPSILON += stats.Table_EPSILON
+            self.exp_EPSILON += stats.Table_EPSILON
             self.exp_IGD += stats.Table_IGD
             self.exp_Ft += stats.Table_Ft
 
@@ -119,10 +142,103 @@ class Exp:
         plt.show()
 
 
+
+class ExpTime:
+
+    def __init__(self):
+        self.legend = ["switch-greedy", "switch-GA", "switch-LKH", "Hybrid", "NSGA-II"]
+        self.xAxis = []
+        # number of points * 7 algorithms
+        self.points = []
+        self.LEN = 0
+
+        V = [2, 3, 4, 5, 6, 7, 8]
+        N = [10, 20, 30, 40, 50, 60]
+        self.REF = np.zeros(len(V)*len(N))
+        tp = []
+        # v^2 * log(n)
+        index = 0
+        for n in N:
+            for v in V:
+                self.REF[index] = v * n
+                tp.append( "%d * %d" % (n, v) )
+                index += 1
+        #print(self.REF)
+        self.ARG = self.REF.argsort()
+        print("ARG\n" + str(self.ARG))
+
+        print(tp)
+        for i in range(0, len(self.ARG)):
+            self.xAxis.append(tp[self.ARG[i]])
+        print(self.xAxis)
+
+
+    def readFile(self, filename):
+        data = np.loadtxt(filename).T
+        print(data.shape)
+
+        # the first row is xAxis
+        self.points = data[3:] / 1000
+        print(self.points)
+        self.LEN = self.points.shape[0]
+
+        # sorting
+        arg = self.ARG
+        for k in range(0, self.LEN):
+            self.points[k] = self.points[k][arg]
+        #print(self.points)
+
+
+    def doPlot(self, filename):
+        self.readFile(filename)
+
+        #plt.style.use('fivethirtyeight')
+        #plt.style.use('ggplot')
+        line_style = ["k-.", "k-", "k:", "k.-", "ko-"]
+
+        plt.figure(figsize=(14, 7), facecolor='white')
+        for index in range(0, self.LEN):
+            plt.plot(self.points[index], line_style[index], label=self.legend[index], markerfacecolor='none', ms=6.5, mew=2.5, linewidth=1.25)
+            #plt.plot(self.points[index], label=self.legend[index])
+
+        x = [k*3 for k in range(0, int(len(self.REF)/3))]
+        y = []
+        for each in x:
+            y.append(self.xAxis[each])
+        plt.xticks(x, y)
+
+        plt.legend(loc='best', numpoints=1, fancybox=True)
+        plt.xlim(0, len(self.REF)-1)
+        plt.ylim(-10,500)
+        plt.xlabel("the number of parameter (n) * the number of value (v)")
+        plt.ylabel("the execution time (second)")
+        plt.tight_layout()
+
+
+        # line from (0, 0) to (9, 162233)
+        plt.plot([0, 9], [0, 159], 'k--', lw=1)
+        # line from (33.2, 156) to (41, 0)
+        plt.plot([33.2, 41], [156, 0], 'k--', lw=1)
+
+        # sub plot
+        subplt = plt.axes([0.26,0.38,0.545,0.55])
+        for index in range(0, self.LEN):
+            subplt.plot(self.points[index], line_style[index], label=self.legend[index], markerfacecolor='none', ms=6.5, mew=2.5, linewidth=1.75)
+        subplt.set_xlim(0, len(self.REF)-1)
+        subplt.set_ylim(-0.2,3)
+        subplt.set_xticklabels([])
+
+        plt.show()
+
+
 if __name__=='__main__':
-    exp = Exp(0, 399)
+    #exp = Exp(0, 399)
     #exp.boxPlot("Cost")
     #exp.printStats()
     #exp.writeStats()
     #exp.writeBestOrder()
-    exp.boxPlots(["Cost", "RFD", "EPSILON", "IGD", "Ft"])
+    #exp.boxPlots(["Cost", "RFD", "EPSILON", "IGD", "Ft"])
+    #exp.writeStatsLatex()
+
+    ep = ExpTime()
+    ep.doPlot("alg.txt")
