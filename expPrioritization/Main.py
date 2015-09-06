@@ -16,6 +16,7 @@ class Exp:
         self.exp_EPSILON = np.zeros(shape=(21,3))
         self.exp_IGD = np.zeros(shape=(21,3))
         self.exp_Ft = np.zeros(shape=(21,3))
+        self.exp_RFDc = np.zeros(shape=(21,3))
 
         self.statsName = []
         for i in range(6,-1,-1):
@@ -29,6 +30,7 @@ class Exp:
         self.box_EPSILON = np.zeros(shape=(end-begin+1, 7))
         self.box_IGD = np.zeros(shape=(end-begin+1, 7))
         self.box_Ft = np.zeros(shape=(end-begin+1, 7))
+        self.box_RFDc = np.zeros(shape=(end-begin+1, 7))
 
         # the best orders in term of Ft
         self.bestMeanFt = []    # which has the minimum mean value
@@ -54,6 +56,10 @@ class Exp:
         str += "\n# Stats Ft + / = / -\n"
         for k in range(0, 21):
             str += np.array_repr(self.exp_Ft[k]) + " " + self.statsName[k] + "\n"
+        str += "\n# Stats RFDc + / = / -\n"
+        for k in range(0, 21):
+            str += np.array_repr(self.exp_RFDc[k]) + " " + self.statsName[k] + "\n"
+
         f = open('stats.data','w')
         f.write(str)
         f.close()
@@ -63,19 +69,29 @@ class Exp:
         for k in range(0, 21):
             ss += self.statsName[k] + " & "
             # RFD
-            ss += str(self.exp_RFD[k][0].astype(int)) + " / " + str(self.exp_RFD[k][1].astype(int)) + " / " + str(self.exp_RFD[k][2].astype(int))
-            ss += " & "
+            ss += str(self.exp_RFD[k][0].astype(int)) + " & / & " + \
+                  str(self.exp_RFD[k][1].astype(int)) + " & / & " + \
+                  str(self.exp_RFD[k][2].astype(int)) + " & "
             # cost
-            ss += str(self.exp_Cost[k][0].astype(int)) + " / " + str(self.exp_Cost[k][1].astype(int)) + " / " + str(self.exp_Cost[k][2].astype(int))
-            ss += " & "
+            ss += str(self.exp_Cost[k][0].astype(int)) + "& / &" + \
+                  str(self.exp_Cost[k][1].astype(int)) + " & / & " + \
+                  str(self.exp_Cost[k][2].astype(int)) + " & "
             # epsilon
-            ss += str(self.exp_EPSILON[k][0].astype(int)) + " / " + str(self.exp_EPSILON[k][1].astype(int)) + " / " + str(self.exp_EPSILON[k][2].astype(int))
-            ss += " & "
+            ss += str(self.exp_EPSILON[k][0].astype(int)) + " & / & " + \
+                  str(self.exp_EPSILON[k][1].astype(int)) + " & / & " + \
+                  str(self.exp_EPSILON[k][2].astype(int)) + " & "
             # igd
-            ss += str(self.exp_IGD[k][0].astype(int)) + " / " + str(self.exp_IGD[k][1].astype(int)) + " / " + str(self.exp_IGD[k][2].astype(int))
-            ss += " & "
+            ss += str(self.exp_IGD[k][0].astype(int)) + " & / & " + \
+                  str(self.exp_IGD[k][1].astype(int)) + " & / & " + \
+                  str(self.exp_IGD[k][2].astype(int)) + " & "
+            # RFDc
+            ss += str(self.exp_RFDc[k][0].astype(int)) + " & / & " + \
+                  str(self.exp_RFDc[k][1].astype(int)) + " & / & " + \
+                  str(self.exp_RFDc[k][2].astype(int)) + " & "
             # ft
-            ss += str(self.exp_Ft[k][0].astype(int)) + " / " + str(self.exp_Ft[k][1].astype(int)) + " / " + str(self.exp_Ft[k][2].astype(int))
+            ss += str(self.exp_Ft[k][0].astype(int)) + " & / & " + \
+                  str(self.exp_Ft[k][1].astype(int)) + " & / & " + \
+                  str(self.exp_Ft[k][2].astype(int))
             ss += "\\\ \n"
         print(ss)
 
@@ -86,6 +102,8 @@ class Exp:
         print("\nEPSILON Box");print(self.box_EPSILON)
         print("\nIGD Box");print(self.box_IGD)
         print("\nFt Box");print(self.box_Ft)
+        print("\nRFDc Box");print(self.box_RFDc)
+
 
     def writeBestOrder(self):
         f = open('order.data','w')
@@ -99,7 +117,7 @@ class Exp:
 
     def scanFiles(self, begin, end):
         for index in range(begin, end+1):
-            case = Case( index, ORDERS, "data//" + str(index) + ".txt" )
+            case = Case( str(index), ORDERS, "data//" + str(index) + ".txt" )
             stats = Stats(case)
 
             # best
@@ -112,6 +130,7 @@ class Exp:
             self.exp_EPSILON += stats.Table_EPSILON
             self.exp_IGD += stats.Table_IGD
             self.exp_Ft += stats.Table_Ft
+            self.exp_RFDc += stats.Table_RFDc
 
             # mean box plot
             self.box_Cost[index] = case.Cost_Mean
@@ -119,6 +138,12 @@ class Exp:
             self.box_EPSILON[index] = case.EPSILON_Mean
             self.box_IGD[index] = case.IGD_Mean
             self.box_Ft[index] = case.Ft_Mean
+            self.box_RFDc[index] = case.RFDc_Mean
+
+            #print("------------------")
+            #print(case)
+            #print("------------------")
+            #print(stats)
 
     def boxPlots(self, names):
         for each in names:
@@ -129,7 +154,8 @@ class Exp:
                 "RFD"     : self.box_RFD,
                 "EPSILON" : self.box_EPSILON,
                 "IGD"     : self.box_IGD,
-                "Ft"      : self.box_Ft }
+                "Ft"      : self.box_Ft,
+                "RFDc"    : self.box_RFDc }
         data = sel[name]
         fig = plt.figure( figsize=(10, 5) )
         plt.boxplot(data)
@@ -232,13 +258,14 @@ class ExpTime:
 
 
 if __name__=='__main__':
-    #exp = Exp(0, 399)
+    exp = Exp(0, 32)
+
     #exp.boxPlot("Cost")
-    #exp.printStats()
+
     #exp.writeStats()
     #exp.writeBestOrder()
-    #exp.boxPlots(["Cost", "RFD", "EPSILON", "IGD", "Ft"])
+    exp.boxPlots(["Cost", "RFD", "EPSILON", "IGD", "Ft", "RFDc"])
     #exp.writeStatsLatex()
 
-    ep = ExpTime()
-    ep.doPlot("alg.txt")
+    #ep = ExpTime()
+    #ep.doPlot("alg.txt")

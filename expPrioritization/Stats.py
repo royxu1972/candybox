@@ -13,6 +13,7 @@ class Stats:
         self.Wilcox_EPSILON = self.statsUpdarte(case.EPSILON, operator.le)
         self.Wilcox_IGD = self.statsUpdarte(case.IGD, operator.le)
         self.Wilcox_Ft = self.statsUpdarte(case.Ft, operator.le)
+        self.Wilcox_RFDc = self.statsUpdarte(case.RFDc, operator.ge)
 
         # the best order in term of Ft
         self.bestFtOrder = self.updateBestFt()
@@ -29,6 +30,7 @@ class Stats:
         self.Table_EPSILON = self.updateTable(self.Wilcox_EPSILON)
         self.Table_IGD = self.updateTable(self.Wilcox_IGD)
         self.Table_Ft = self.updateTable(self.Wilcox_Ft)
+        self.Table_RFDc = self.updateTable(self.Wilcox_RFDc)
 
     def __str__(self):
         str = "Cost as + \  = \  -\n"
@@ -46,6 +48,9 @@ class Stats:
         str += "\nFt as + \  = \  -\n"
         for k in range(0, 21):
             str += np.array_repr(self.Table_Ft[k]) + " " + self.statsName[k] + "\n"
+        str += "\nRFDc as + \  = \  -\n"
+        for k in range(0, 21):
+            str += np.array_repr(self.Table_RFDc[k]) + " " + self.statsName[k] + "\n"
         return str
 
     def statsUpdarte(self, arr, opt):

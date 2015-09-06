@@ -15,6 +15,7 @@ class Case:
         self.EPSILON = data[2]
         self.IGD = data[3]
         self.Ft = data[4]
+        self.RFDc = data[5]
 
         # mean values of each orders under each metric
         norm = lambda x: (x - x.min()) / (x.max() - x.min())
@@ -23,6 +24,7 @@ class Case:
         self.EPSILON_Mean = norm( np.mean(self.EPSILON, axis=1) )
         self.IGD_Mean = norm( np.mean(self.IGD, axis=1) )
         self.Ft_Mean = norm( np.mean(self.Ft, axis=1) )
+        self.RFDc_Mean = norm( np.mean(self.RFDc, axis=1) )
 
         # the best one
         self.bestFtOrder = self.orders[np.argmin(self.Ft_Mean)]
@@ -34,12 +36,14 @@ class Case:
         str += "\nEPSILON \n" + np.array_repr(self.EPSILON)
         str += "\nIGD \n" + np.array_repr(self.IGD)
         str += "\nFt \n" + np.array_repr(self.Ft)
+        str += "\nRFDc \n" + np.array_repr(self.RFDc)
 
         str += "\n\nMean Cost\n" + np.array_repr(self.Cost_Mean)
         str += "\nMean RFD\n" + np.array_repr(self.RFD_Mean)
         str += "\nMean EPSILON\n" + np.array_repr(self.EPSILON_Mean)
         str += "\nMean IGD\n" + np.array_repr(self.IGD_Mean)
         str += "\nMean Ft\n" + np.array_repr(self.Ft_Mean)
+        str += "\nMean RFDc\n" + np.array_repr(self.RFDc_Mean)
         return str
 
 
@@ -53,14 +57,19 @@ class Case:
 
         # compute the index of each sub data set
         start = [2]
-        for x in range(0, 4):
+        for x in range(0, 5):
             tp = start[x] + length_orders + 2
             start.append(tp)
 
         # read data
         data = []
         # [
-        #   [|orders| * 30], [|orders| * 30], [|orders| * 30], [|orders| * 30], [|orders| * 30]
+        #   [|orders| * 30],
+        #   [|orders| * 30],
+        #   [|orders| * 30],
+        #   [|orders| * 30],
+        #   [|orders| * 30],
+        #   [|orders| * 30]
         # ]
         for x in start:
             each = np.empty((length_orders, 30))
