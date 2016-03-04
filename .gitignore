@@ -12,5 +12,6 @@
 *.json
 *.bib
 *.csv
+main.py
 __pycache__/
 data/

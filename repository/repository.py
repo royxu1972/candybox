@@ -9,20 +9,20 @@ class librarian:
         table = d["db"][0]["table"]
         passwd = d["db"][0]["passwd"]
         # connect
-        self.conn = pymysql.connect(host=host, port=3306, user=user, passwd=passwd, db=table)
-        self.result = self.conn.cursor()
+        self.connection = pymysql.connect(host=host, port=3306, user=user, passwd=passwd, db=table)
+        self.cursor = self.connection.cursor()
 
     def __del__(self):
-        self.conn.close()
+        self.connection.close()
 
     def get_first_author(self):
         """
-        get first author list
+        Return the list of all first authors.
         """
-        self.result.execute("SELECT author FROM listauthor order by author")
+        self.cursor.execute('SELECT author FROM listauthor order by author')
 
         author_list = []
-        for each in self.result:
+        for each in self.cursor:
             a = str(each[0]).split(',')
             author_list.append( a[0] )
 
@@ -32,7 +32,7 @@ class librarian:
 
     def get_paper_list(self):
         """
-        get plain paper list and field category
+        Return plain citations of all paper
         """
         generation = ""
         application = ""
@@ -43,11 +43,11 @@ class librarian:
         diagnosis = ""
         survey = ""
         oracle = ""
-        self.result.execute("SELECT * FROM list order by year DESC")
+        self.cursor.execute("SELECT * FROM list order by year DESC")
 
         index = 1
         with open("paper_list.txt", 'w') as wf:
-            for r in self.result:
+            for r in self.cursor:
                 # [index] + author + title  + "in" + publication
                 content = "[" + str(index) + "] " + str(r[4]) + ", " + str(r[5]) + ", in " + str(r[6])
 
@@ -60,7 +60,7 @@ class librarian:
                 if ( str(r[2]) == "article" ):
                     content += ", " + str(r[8]) + "(" + str(r[9]) + "): " + str(r[10]) + ", " + str(r[3])
                 # "year: page" for inproceedings
-                elif ( str(r[2]) == "inproceedings" ):
+                elif ( str(r[2]) == "inproceedings" or str(r[2]) == "incollections" ):
                     content += ", " + str(r[3]) + ": " + str(r[10])
                 # "TechNo, year" for techreport
                 elif ( str(r[2]) == "techreport" ):
@@ -96,7 +96,7 @@ class librarian:
 
                 index += 1
 
-        self.result.close()
+        self.cursor.close()
 
         # write field file
         with open("field.txt", 'w') as wf:
@@ -128,10 +128,79 @@ class librarian:
             wf.writelines("oracle: " + oracle.decode('gbk') + "\n")
 
 
-if __name__=='__main__':
-    l = librarian()
-    l.get_paper_list()
+    def check_new_authors(self):
+        """
+        Check whether every author is in the scholar table. All new
+        authors will be printed to console.
+        """
+        author_list = []    # all authors from scholar table
+        result1 = self.connection.cursor()
+        result1.execute('select name from scholar order by name')
+        for each in result1:
+            a = str(each[0])
+            author_list.append(a)
+
+        # get every author from paper table, and check their existences
+        result2 = self.connection.cursor()
+        result2.execute("select author from list")
+        for each in result2:
+            a = str(each[0]).split(',')
+            for each_name in a:
+                each_name = each_name.strip()
+                if each_name not in author_list:
+                    author_list.append(each_name)
+                    print(each_name)
 
 
+    def check_paper_json(self, filename):
+        """
+        Check whether every paper in filename.json is included in our database.
+        The input json file is from DBLP database. All new papers will be written
+        to a file.
+        """
+        p = json.load(fp=open(filename))
+        papers = p['result']['hits']['hit']
+        num = int(p['result']['hits']['@total'])
+
+        new_title_list = []
+        for i in range(0, num):
+            each = papers[i]['info']['title']
+            each = each[:len(each)-1]    # remove the dot in the end of title
+
+            # check repository, perfect match
+            self.cursor.execute('select id, title from list where title = "' + each + '"')
+            result = self.cursor.fetchone()
+            if (result is None):
+                new_title_list.append(each)
+
+        # write result to file
+        with open("new_title_list.txt", 'w') as fw:
+            for each in new_title_list:
+                fw.write(each + '\n')
+
+
+    def get_country_code_table(self, filename):
+        p = json.load(fp=open(filename))
+        country = []
+        code = []
+
+        for each in p:
+            country.append(each['name'])
+            code.append(each['code'])
+
+        # write result to file
+        with open("country code.txt", 'w') as fw:
+            for i in range(0, len(country)):
+                fw.write(country[i] + '|' + code[i] + '\n')
+
+
+    def get_all_title(self):
+        title = ''
+        result1 = self.connection.cursor()
+        result1.execute('select title from list')
+
+        for each in result1:
+            a = str(each[0])
+            print(a)
 
 

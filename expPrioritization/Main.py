@@ -2,7 +2,6 @@ from Stats import Stats
 from Case import Case
 import numpy as np
 import matplotlib.pyplot as plt
-import math
 
 ORDERS = ["random", "coverage", "switch-greedy", "switch-GA", "switch-LKH", "Hybrid", "NSGA-II"]
 
@@ -83,7 +82,14 @@ class Exp:
             # igd
             ss += str(self.exp_IGD[k][0].astype(int)) + " & / & " + \
                   str(self.exp_IGD[k][1].astype(int)) + " & / & " + \
-                  str(self.exp_IGD[k][2].astype(int)) + " & "
+                  str(self.exp_IGD[k][2].astype(int))
+            ss += "\\\ \n"
+        print(ss)
+        print("\n\n")
+
+        ss = ""
+        for k in range(0, 21):
+            ss += self.statsName[k] + " & "
             # RFDc
             ss += str(self.exp_RFDc[k][0].astype(int)) + " & / & " + \
                   str(self.exp_RFDc[k][1].astype(int)) + " & / & " + \
@@ -157,12 +163,12 @@ class Exp:
                 "Ft"      : self.box_Ft,
                 "RFDc"    : self.box_RFDc }
         data = sel[name]
-        fig = plt.figure( figsize=(10, 5) )
+        fig = plt.figure(figsize=(10, 5))
         plt.boxplot(data)
-        plt.xticks([x+1 for x in range(0, len(ORDERS))],
-                   ORDERS,
-                   rotation=20)
+        plt.xticks([x+1 for x in range(0, len(ORDERS))], ORDERS, rotation=16)
         plt.ylim([-0.1,1.1])
+        plt.tick_params(axis='both', which='major', labelsize=16)
+
         plt.tight_layout()
         fig.canvas.set_window_title(name)
         plt.show()
@@ -233,13 +239,13 @@ class ExpTime:
             y.append(self.xAxis[each])
         plt.xticks(x, y)
 
-        plt.legend(loc='best', numpoints=1, fancybox=True)
+        plt.legend(loc='best', numpoints=1, fancybox=True, fontsize=14)
         plt.xlim(0, len(self.REF)-1)
         plt.ylim(-10,500)
-        plt.xlabel("the number of parameter (n) * the number of value (v)")
-        plt.ylabel("the execution time (second)")
+        plt.xlabel("the number of parameter (n) * the number of value (v)", fontsize=14)
+        plt.ylabel("the execution time (second)", fontsize=14)
+        plt.tick_params(axis='both', which='major', labelsize=14)
         plt.tight_layout()
-
 
         # line from (0, 0) to (9, 162233)
         plt.plot([0, 9], [0, 159], 'k--', lw=1)
@@ -253,19 +259,18 @@ class ExpTime:
         subplt.set_xlim(0, len(self.REF)-1)
         subplt.set_ylim(-0.2,3)
         subplt.set_xticklabels([])
+        subplt.tick_params(axis='both', which='major', labelsize=14)
 
         plt.show()
 
 
 if __name__=='__main__':
-    exp = Exp(0, 32)
-
+    exp = Exp(0, 399)
     #exp.boxPlot("Cost")
-
     #exp.writeStats()
     #exp.writeBestOrder()
     exp.boxPlots(["Cost", "RFD", "EPSILON", "IGD", "Ft", "RFDc"])
     #exp.writeStatsLatex()
 
-    #ep = ExpTime()
-    #ep.doPlot("alg.txt")
+    ep = ExpTime()
+    ep.doPlot("alg.txt")
