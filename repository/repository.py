@@ -1,5 +1,6 @@
 import json
 import pymysql
+import bibtexparser
 
 class librarian:
     def __init__(self):
@@ -154,7 +155,7 @@ class librarian:
 
     def check_paper_json(self, filename):
         """
-        Check whether every paper in filename.json is included in our database.
+        Check whether every paper in filename (.json) is included in our database.
         The input json file is from DBLP database. All new papers will be written
         to a file.
         """
@@ -178,6 +179,22 @@ class librarian:
             for each in new_title_list:
                 fw.write(each + '\n')
 
+    def check_paper_plain(self, filename):
+        """
+        Check whether every paper in filename is included in our database.
+        All new papers will be labeled.
+        """
+        f = open(filename)
+        for line in f:
+            line = line.strip()
+            # check repository
+            self.cursor.execute('select id, title from list where title = "' + line + '"')
+            result = self.cursor.fetchone()
+
+            if (result is None):
+                print('1  ' + line)
+            else:
+                print('-  ' + line)
 
     def get_country_code_table(self, filename):
         p = json.load(fp=open(filename))
@@ -202,5 +219,39 @@ class librarian:
         for each in result1:
             a = str(each[0])
             print(a)
+
+    def match_plain_by_bib(self, plainFile, bibFile):
+        """
+        For each paper in plainFile, find its vol, no, page, and doi
+        """
+        f = open(plainFile)
+        titles = []
+        for line in f:
+            line = line.strip()
+            titles.append(line)
+        print('# of ' + plainFile + ' = ' + str(len(titles)))
+
+        # open bib file
+        with open(bibFile) as bibtex_file:
+            bib_database = bibtexparser.load(bibtex_file)
+
+        count = 0
+        missTitles = []
+        for title in titles:
+            done = False
+            for each in bib_database.entries:
+                if(title == each['title']):
+                    vol = each['volume'] if ('volume' in each.keys()) else ''
+                    no = each['number'] if ('number' in each.keys()) else ''
+                    pages = each['pages'] if ('pages' in each.keys()) else ''
+                    doi = each['doi'] if ('doi' in each.keys()) else ''
+                    print(vol + ',' + no + ',' + pages + ',,' + doi)
+                    count = count + 1
+                    done = True
+            if( not done ):
+                print(',,,,')
+                missTitles.append(title)
+
+        print(missTitles)
 
 
