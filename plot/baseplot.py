@@ -1,110 +1,100 @@
-import numpy as np
 import matplotlib.pyplot as plt
-import pandas as pd
-from pandas.tools.plotting import parallel_coordinates
+import numpy as np
 
-font_large = {'family': 'Arial', 'size': 20}
-font_normal = {'family': 'Arial', 'size': 16}
-line_style = ["k.-", "k--", "k-", "k--", "ks--", "kd--", "k+--"]
+class BasePlot:
 
-class Data:
-    def __init__(self, data, xLabel, yLabel, xSticks, legend, title=""):
+    # apply 0-1 normalization to each row of data
+    def normalize(self, data):
         """
-        Parameters
-        ----------
-        data: (ndarray) -- data point (n * m)
-        xLabel: (String) -- label of x-axis
-        yLabel: (String) -- label of y-axis
-        xSticks: (list of String, ['x1', 'x2', ...]) -- size = m
-        legend: (list of string, ['lg1', 'lg2', ...]) -- size = n
-        title: (String) -- title of figure
+        INPUT PARAMETER
+        ------------------
+        data : a 2D np-array, where each row represents a line
         """
-        self.title = title
-        self.xLabel = xLabel
-        self.yLabel = yLabel
-        self.xSticks = xSticks
-        self.data = data
-        self.legend = legend
+        norm = lambda x: (x - x.min()) / (x.max() - x.min())
+        re = []
+        for each in data:
+            re.append(norm(each))
+        return re
 
-    def print(self):
-        print("Title: " + self.title)
-        print("xLabel: " + self.xLabel)
-        print("yLabel: " + self.yLabel)
-        print(self.xSticks)
-        print(self.data)
-        print(self.legend)
-
-
-
-class APlot:
-    # plot parallel coordinate
-    # INPUT: name.csv -- data file
-    #        label    -- the name of label column
-    #        unique   -- only show single data
-    def parallel(self, name, label, unique=""):
-        if( unique == "" ):
-            data = pd.read_csv( name + '.csv' )
-
-            hybrid = 0
-            switch = 0
-            coverage = 0
-            for i in range(0, 1000):
-                ll = data.values[i][0]
-                if( ll == "hybrid" ):
-                    hybrid += 1
-                elif( ll == "switch-lkh" ):
-                    switch += 1
-                elif( ll == "coverage" ):
-                    coverage += 1
-                else:
-                    print("error")
-                    return
-            print("hybrid = %d, switch = %d, coverage = %d" % (hybrid, switch, coverage))
-
-            plt.figure()
-            parallel_coordinates(data, label)
-            plt.show()
-
-
-class BPlot:
-    """
-    Basic Plot
-    """
-
-    def line(self, Data, Type):
+    # Draw a single line figure
+    def line(self, data, xLabel, yLabel, xStick, legend, style, norm=False):
         """
-        Parameter
-        ---------
-        Data: the data to be plotted
-        Type: (String) -- whether "show" figure or "save" to file
+        INPUT PARAMETER
+        ------------------
+        title   : title of figure
+        data    : a 2D array, where each row represents a line
+        xLabel  : label of x-axis
+        yLabel  : label of y-axis
+        xStick  : each stick of x-axis
+        legend  : the name of each line
+        style   : the type of each line
+        norm    : 0-1 normalization for the data of each line
         """
 
-        plt.style.use('fivethirtyeight')
+        #plt.style.use('fivethirtyeight')
         #plt.style.use('ggplot')
+        plt.figure(figsize=(10, 6), facecolor='white')
 
-        plt.figure(figsize=(14, 8), facecolor='white')
-        for index in range(0, len(Data.data)):
+        if norm:
+            data = self.normalize(data)
+            plt.ylim([-0.05, 1.05])
+
+        for index in range(0, len(data)):
             #plt.plot(Data.data[index], line_style[index], label=Data.legend[index], markerfacecolor='none', ms=6.5, mew=2.5, linewidth=0)
-            plt.plot(Data.data[index], label=Data.legend[index])
+            plt.plot(data[index], style[index], label=legend[index])
 
-        plt.xlabel(Data.xLabel)
-        plt.ylabel(Data.yLabel)
-        plt.title(Data.title)
-
-        x = [k for k in range(0, len(Data.xSticks))]
-        plt.xticks(x, Data.xSticks)
+        plt.xlabel(xLabel)
+        plt.ylabel(yLabel)
+        plt.xticks([k for k in range(0, len(xStick))], xStick)
         plt.legend(loc='best', numpoints=1, fancybox=True)
         plt.tight_layout()
 
-        #plt.axis((1,len(x),-0.1,1.1))
-
-        # show or save
-        if( Type == "show"):
-            plt.show()
-        elif( Type == "save" ):
-            plt.savefig("data//" + Data.title + ".png")
+        plt.show()
         plt.close()
 
+
+    # Draw two relevant line figures
+    # They share the same coordinate and only differ in data
+    def lines(self, data, titles, xLabel, yLabel, xStick, legend, style, norm=False):
+        plt.figure(figsize=(18, 5), facecolor='white')
+        length = len(data)
+
+        if norm:
+            for i in range(0, length):
+                data[i] = self.normalize(data[i])
+
+        for i in range(0, length):
+            plt.subplot(1, length, i+1)
+
+            for index in range(0, len(data[i])):
+                plt.plot(data[i][index], style[index], label=legend[index])
+
+            if i == 0 :
+                plt.ylabel(yLabel, fontsize=14)
+                plt.legend(loc=2, bbox_to_anchor=(-0.27, 1.05), ncol=1)
+
+            if norm:
+                plt.ylim([-0.05, 1.05])
+
+            plt.xlabel(xLabel, fontsize=14)
+            plt.title(titles[i], fontsize=14)
+            plt.xticks([k for k in range(0, len(xStick))], xStick)
+            plt.tight_layout(rect=[0.08, 0, 1, 1])
+
+        plt.show()
+
+
+
 if __name__=='__main__':
-    a = APlot()
-    a.parallel("2","Top")
+    a = BasePlot()
+    data1 = np.array([[1,2,3,4,5],[6,7,6,8,10]])
+    data2 = np.array([[3,3,4,5,6],[8,4,2,9,5]])
+    xStick = [10,20,30,40,50]
+    legend = ["l1","l2"]
+    style = ["k.-", "k--"]
+
+    #a.line(data1, "xx", "yy", xStick, legend, style, norm=True)
+    a.lines([data1, data2], ["t1", "t2"], "xx", "yy", xStick, legend, style, norm=True)
+
+
+

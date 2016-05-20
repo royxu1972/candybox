@@ -1,5 +1,6 @@
-from Stats import Stats
-from Case import Case
+import baseplot as bp
+from stats import Stats
+from case import Case
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -265,12 +266,13 @@ class ExpTime:
 
 
 if __name__=='__main__':
-    exp = Exp(0, 399)
-    #exp.boxPlot("Cost")
-    #exp.writeStats()
-    #exp.writeBestOrder()
-    exp.boxPlots(["Cost", "RFD", "EPSILON", "IGD", "Ft", "RFDc"])
-    #exp.writeStatsLatex()
 
-    ep = ExpTime()
-    ep.doPlot("alg.txt")
+    e = Exp(0, 399)
+    #e.boxPlot("Cost")
+    #e.writeStats()
+    #e.writeBestOrder()
+    #e.boxPlots(["Cost", "RFD", "EPSILON", "IGD", "Ft", "RFDc"])
+    #e.writeStatsLatex()
+
+    #ep = ExpTime()
+    #ep.doPlot("alg.txt")
