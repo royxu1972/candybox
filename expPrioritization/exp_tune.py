@@ -3,13 +3,13 @@ import numpy as np
 
 titles = ["GA", "NSGA"]
 legend = ["Case 1", "Case 2", "Case 3", "Case 4", "Case 5"]
-xlabels = ["population", "iteration", "crossover rate", "mutation rate", "population * iteration"]
-ylabel = ["total switching cost", "distance"]
+xlabels = ["population size", "maximum number of iteration", "crossover rate", "mutation rate", "population * iteration"]
+ylabel = ["total switching cost", "distance to the ideal order"]
 xSticks = [["10", "20", "30", "40", "60", "80", "100"],
            ["50", "100", "200", "400", "600", "800", "1000", "1300", "1500", "2000"],
            ["0.1", "0.3", "0.5", "0.7", "0.9"],
            ["0.1", "0.3", "0.5", "0.7", "0.9"],
-           ["10*6000", "20*3000", "30*2000", "40*1500", "60*1000", "80*750", "100*600"]
+           ["10*3600", "20*1800", "30*1200", "40*900", "60*600", "80*450", "100*360"]
           ]
 style = ["k8-", "k^-", "ks-", "kD-", "k*-"]
 
@@ -33,11 +33,12 @@ def readFile(name):
 
 
 dataGA = readFile('tuning/ga.txt')
-i = 4
+dataNSGA = readFile('tuning/nsga.txt')
+i = 3
 
 print(dataGA[i])
 plt = bp.BasePlot()
-plt.lines([dataGA[i], dataGA[i]], titles, xlabels[i], ylabel, xSticks[i], legend, style, norm=True)
+plt.lines([dataGA[i], dataNSGA[i]], titles, xlabels[i], ylabel, xSticks[i], legend, style, norm=True)
 
 #a.line(data1, "xx", "yy", xStick, legend, style, norm=True)
 #a.lines([data1, data2], ["t1", "t2"], "xx", "yy", xStick, legend, style, norm=True)

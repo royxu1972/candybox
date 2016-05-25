@@ -56,7 +56,7 @@ class BasePlot:
     # Draw two relevant line figures
     # They share the same coordinate and only differ in data
     def lines(self, data, titles, xLabel, yLabels, xStick, legend, style, norm=False):
-        plt.figure(figsize=(16, 4), facecolor='white')
+        plt.figure(figsize=(16, 3.5), facecolor='white')
         length = len(data)
 
         if norm:
@@ -70,7 +70,7 @@ class BasePlot:
                 plt.plot(data[i][index], style[index], label=legend[index])
 
             if i == 0 :
-                plt.legend(loc=2, bbox_to_anchor=(-0.35, 1.05), ncol=1)
+                plt.legend(loc=2, bbox_to_anchor=(-0.35, 1.05), ncol=1, fontsize=14)
 
             if norm:
                 plt.ylim([-0.05, 1.05])
