@@ -70,7 +70,7 @@ class BasePlot:
                 plt.plot(data[i][index], style[index], label=legend[index])
 
             if i == 0 :
-                plt.legend(loc=2, bbox_to_anchor=(-0.35, 1.05), ncol=1, fontsize=14)
+                plt.legend(loc=2, bbox_to_anchor=(-0.35, 1.05), numpoints=1, ncol=1, fontsize=14)
 
             if norm:
                 plt.ylim([-0.05, 1.05])

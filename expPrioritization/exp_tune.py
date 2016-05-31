@@ -32,13 +32,10 @@ def readFile(name):
     return data
 
 
-dataGA = readFile('tuning/ga.txt')
-dataNSGA = readFile('tuning/nsga.txt')
-i = 3
+dataGA = readFile('exp/ga.txt')
+dataNSGA = readFile('exp/nsga.txt')
+i = 4
 
 print(dataGA[i])
 plt = bp.BasePlot()
 plt.lines([dataGA[i], dataNSGA[i]], titles, xlabels[i], ylabel, xSticks[i], legend, style, norm=True)
-
-#a.line(data1, "xx", "yy", xStick, legend, style, norm=True)
-#a.lines([data1, data2], ["t1", "t2"], "xx", "yy", xStick, legend, style, norm=True)

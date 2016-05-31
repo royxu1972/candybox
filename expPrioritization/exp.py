@@ -229,7 +229,7 @@ class ExpTime:
         #plt.style.use('ggplot')
         line_style = ["k-.", "k-", "k:", "k.-", "ko-"]
 
-        plt.figure(figsize=(14, 7), facecolor='white')
+        plt.figure(figsize=(14, 5.2), facecolor='white')
         for index in range(0, self.LEN):
             plt.plot(self.points[index], line_style[index], label=self.legend[index], markerfacecolor='none', ms=6.5, mew=2.5, linewidth=1.25)
             #plt.plot(self.points[index], label=self.legend[index])
@@ -242,23 +242,23 @@ class ExpTime:
 
         plt.legend(loc='best', numpoints=1, fancybox=True, fontsize=14)
         plt.xlim(0, len(self.REF)-1)
-        plt.ylim(-10,500)
-        plt.xlabel("the number of parameter (n) * the number of value (v)", fontsize=14)
+        plt.ylim(-10,1400)
+        plt.xlabel("the number of parameters (n) * the number of values (v)", fontsize=14)
         plt.ylabel("the execution time (second)", fontsize=14)
         plt.tick_params(axis='both', which='major', labelsize=14)
         plt.tight_layout()
 
-        # line from (0, 0) to (9, 162233)
-        plt.plot([0, 9], [0, 159], 'k--', lw=1)
+        # line from (0, 0) to (8.5, 450)
+        plt.plot([0, 8.5], [0, 450], 'k--', lw=1)
         # line from (33.2, 156) to (41, 0)
-        plt.plot([33.2, 41], [156, 0], 'k--', lw=1)
+        plt.plot([28.8, 41], [450, 0], 'k--', lw=1)
 
         # sub plot
-        subplt = plt.axes([0.26,0.38,0.545,0.55])
+        subplt = plt.axes([0.26, 0.4, 0.45, 0.5])
         for index in range(0, self.LEN):
             subplt.plot(self.points[index], line_style[index], label=self.legend[index], markerfacecolor='none', ms=6.5, mew=2.5, linewidth=1.75)
         subplt.set_xlim(0, len(self.REF)-1)
-        subplt.set_ylim(-0.2,3)
+        subplt.set_ylim(-0.2, 4)
         subplt.set_xticklabels([])
         subplt.tick_params(axis='both', which='major', labelsize=14)
 
@@ -275,4 +275,4 @@ if __name__=='__main__':
     #e.writeStatsLatex()
 
     ep = ExpTime()
-    ep.doPlot("alg.txt")
+    ep.doPlot("exp/cost data.txt")
