@@ -267,12 +267,12 @@ class ExpTime:
 
 if __name__=='__main__':
 
-    #e = Exp(0, 399)
+    e = Exp(0, 389)
     #e.boxPlot("Cost")
     #e.writeStats()
     #e.writeBestOrder()
-    #e.boxPlots(["Cost", "RFD", "EPSILON", "IGD", "Ft", "RFDc"])
+    e.boxPlots(["Cost", "RFD", "EPSILON", "IGD", "Ft", "RFDc"])
     #e.writeStatsLatex()
 
-    ep = ExpTime()
-    ep.doPlot("exp/cost data.txt")
+    #ep = ExpTime()
+    #ep.doPlot("exp/cost data.txt")

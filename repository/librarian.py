@@ -254,4 +254,9 @@ class librarian:
 
         print(missTitles)
 
-
+if __name__=='__main__':
+    l = librarian()
+    l.getAllPaperAsJSON()
+    #l.match_plain_by_bib('eee.txt', 'cit.bib')
+    #l.get_country_code_table('code.json')
+    #l.get_all_title()
