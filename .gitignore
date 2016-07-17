@@ -7,9 +7,16 @@
 ## General Python
 #################
 *.txt
+*.data
 *.log
 *.json
 *.bib
 *.csv
+main.py
 __pycache__/
 data/
+
+#################
+## Other
+#################
+*.zip
